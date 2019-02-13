@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Nunito Sans', Helvetica, sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif;
   }
   p, h1, h2{
     text-rendering: optimizeLegibility !important;
@@ -10,6 +10,7 @@
   $lightGray: #787878;
   $marginInit: 18%;
   $marginMob: 4%;
+  $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
   
   html body {
     margin: 0;
@@ -26,14 +27,25 @@
     transition-duration: .5s;
   }
   .blackNav{
-    background-color: $darkGray;
+    background-color: white;
+    box-shadow: rgba($color: #000000, $alpha: .2) 0px 0px 8px;
   }
-  .whiteOut{
-    color: white;
+  .darkOut{
+    color: $darkGray;
   }
   .menuFix{
     transition-duration: .5s;
     margin-top: 20px;
+    li{
+      a{
+        &:hover{
+          border-bottom: $darkGray 1px solid;
+        }
+      }
+    }
+  }
+  .logoFix{
+    margin-top: 4px !important;
   }
 
   .logo {
@@ -42,6 +54,7 @@
     left: 60px;
     margin-top: 15px;
     position: fixed;
+    transition-duration: .5s;
 
     a {
       color: $darkGray;
@@ -49,9 +62,10 @@
       font-size: 18px;
       text-decoration: none;
       .mainLogo{
-        background: url('imgs/logo_define.svg')no-repeat;
-        width: 85px;
-        height: 30px;
+        background: url('imgs/arvisual_logo.svg')no-repeat;
+        background-size: cover;
+        width: 126px;
+        height: 35px;
       }
     }
   }
@@ -75,116 +89,91 @@
       a {
         display: inline-block;
         outline: none;
-        color: $darkGray;
+        color: white;
         text-decoration: none;
         font-size: .85em;
-        font-weight: 900;
         transition-duration: .2s;
         &:hover{
-            color: white;
+            border-bottom: white solid 1px;
+            padding-bottom: 2px;
         }
       }
     }
   }
+
 //main image top
 .mainImg{
-    background: url('imgs/main_bg.jpg')no-repeat;
+    background: url('imgs/main_case_studies.jpg')no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: left;
     height: 500px;
     width: 100%;
-    .tagline{
-        position: absolute;
-        top: 230px;
-        font-size: 3em;
-        left: $marginInit;
-        color: $darkGray;
-        left: 18%;
-        line-height: 1.3em;
-    }
 }
 //title section
 .aboutUs{
-    margin-top: 90px;
+    margin-top: 70px;
     margin-left: $marginInit;
     margin-right: $marginInit;
+    text-align: center;
+    margin-bottom: 50px;
     .header{
         color: $darkGray;
-        font-size: 1.5em;
+        font-size: 2em;
+        font-weight: 900;
     }
     .par{
         color: $lightGray;
         margin-top: 10px;
         margin-bottom: 30px;
-        max-width: 600px;
+        line-height: 1.6em;
     }
-    a{
-        text-align: center;
-        background: none;
-        border: solid 1px $lightGray;
-        padding: 6px 24px 6px 24px;
-        border-radius: 50px;
-        text-decoration: none;
-        color: $darkGray;
-        transition-duration: .2s;
-        span{
-            color: transparent;
-            padding-left: 0px;
-            transition-duration: .2s;
-            i{
-                position: absolute;
-                padding-top: 3px;
-                padding-right: 0px;
-            }
-        }
-        &:hover{
-            color: $darkGray;
-            border: solid 1px $darkGray;
-            padding: 6px 20px 6px 24px;
-            span{
-                color: $darkGray;
-                padding-left: 18px;
-                padding-right: 5px;
-            }
-        }
+    .companies{
+      background: url('imgs/testimonials.jpg')no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 400px;
     }
 }
 //labzone case study
+#case1{
+  background: url('imgs/wooden_germany_cs.jpg')no-repeat;
+  background-size: cover;
+  background-position-y: -220px;
+}
+#case2{
+  background: url('imgs/glamm_fire_cs.jpg')no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .caseStudy{
-    margin-top: 100px;
+    margin-top: 20px;
     width: 100%;
     height: 400px;
-    background: url('imgs/labzone_cs.jpg')no-repeat;
-    background-size: cover;
     .containCs{
         margin-left: $marginInit;
         margin-right: $marginInit;
-        .linkCs{
-            padding-top: 50px;
-            color: $lightGray;
-            a{
-                text-decoration: none;
-                color: $lightGray;
-                transition-duration: .2s;
-                &:hover{
-                    color: $darkGray;
-                }
-            }
+        .headCs{
+          color: white;
+          font-size: 2.5em;
+          padding-top: 60px;
+          margin-bottom: 20px;
+          margin-top: 0;
         }
         .par{
-            color: $darkGray;
+            color: white;
             max-width: 400px;
-            margin-top: 80px;
+            margin-top: 20px;
             margin-bottom: 80px;
+            line-height: 1.6em;
         }
         .btnCs{
             text-align: center;
             background: none;
-            border: solid 1px $lightGray;
+            border: solid 1px white;
             padding: 6px 24px 6px 24px;
             border-radius: 50px;
             text-decoration: none;
-            color: $darkGray;
+            color: white;
             transition-duration: .2s;
             span{
                 color: transparent;
@@ -197,11 +186,11 @@
                 }
             }
             &:hover{
-                color: $darkGray;
-                border: solid 1px $darkGray;
+                color: white;
+                border: solid 1px ;
                 padding: 6px 20px 6px 24px;
                 span{
-                    color: $darkGray;
+                    color: white;
                     padding-left: 18px;
                     padding-right: 5px;
                 }
@@ -215,59 +204,17 @@
         right: $marginInit;
     }
 }
-//services
-.services{
-    margin-top: 120px;
-    .containSer{
-        margin-top: 100px;
-        margin-left: $marginInit;
-        margin-right: $marginInit;
-        .header{
-            color: $darkGray;
-            font-size: 1.5em;
-        }
-        .serFlex{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            margin-top: 20px;
-            .servCluster{
-                display: flex;
-                flex-direction: row;
-                .servUnit{
-                    flex-basis: 50%;
-                    .subhead{
-                        color: $darkGray;
-                        font-size: 1.2em;
-                        font-weight: 600;
-                    }
-                    .par{
-                        color: $lightGray;
-                        max-width: 360px;
-                    }
-                }
-            }
-        }
-    }
-}
-//testimonials
-.testimonials{
-    background: url('imgs/hustle.jpg')no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 500px;
-    margin-top: 90px;
-}
-//contact
+//contact social media
 .contact{
     .containCont{
-        margin-top: 100px;
+        margin-top: 50px;
         margin-left: $marginInit;
         margin-right: $marginInit;
         .header{
-            color: $darkGray;
-            font-size: 1.5em;
+          color: $darkGray;
+          font-size: 1.5em;
+          font-weight: 900;
+          margin-bottom: 0;
         }
         .contForm{
             display: flex;
@@ -282,6 +229,10 @@
                     border: #aaa 1px solid;
                     padding: 9px 8px 8px 8px;
                     border-radius: 3px;
+                    resize: none;
+                }
+                textarea{
+                  max-height: 100px;
                 }
                 label{
                     color: $lightGray;
@@ -304,33 +255,172 @@
                         color: $darkGray;
                         border: solid 1px $darkGray;
                         cursor: pointer;
+                        width: 168px;
                     }
                 }
             }
             .contInfo{
                 flex-basis: 50%;
-                .subhead{
-                    color: $darkGray;
-                    font-size: 1.2em;
-                    font-weight: 600;
-                }
                 .par{
                     color: $lightGray;
                     margin-top: 10px;
+                    line-height: 1.6em;
+                }
+                .socialMedia{
+                  display: flex;
+                  flex-direction: row;
+                  margin-top: 30px;
+                  i{
+                    color: $darkGray;
+                    font-size: 1.5em;
+                    margin-right: 30px;
+                    transition-duration: .2s;
+                    &:hover{
+                      color: $lightGray;
+                      cursor: pointer;
+                    }
+                  }
                 }
             }
         }
     }
 }
+//request demo
+.requestDemo{
+  width: 100%;
+  background-image: $grad;
+  text-align: center;
+  .contDemo{
+    margin-left: $marginInit;
+    margin-right: $marginInit;
+    .header{
+      color: white;
+      font-size: 2em;
+      font-weight: 900;
+      padding-top: 30px;
+      margin-bottom: 0;
+    }
+    .par{
+      color: white;
+      line-height: 1.6em;
+      margin-bottom: 35px;
+      margin-top: 25px;
+    }
+    wrapper{
+      display: block;
+      padding-bottom: 40px;
+      .btnDemo{
+        background: transparent;
+        font-size: 1em;
+        border: solid 1px white;
+        padding: 6px 24px 6px 24px;
+        border-radius: 50px;
+        color: white;
+        text-decoration: none;
+        transition-duration: .2s;
+        &:hover{
+          background: white;
+          cursor: pointer;
+          padding: 6px 33px 6px 33px;
+          color: #ed1a6b;
+        }
+      }
+    }
+  }
+}
+//popup
+#popupMain{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: .6);
+  top: 0;
+  left: 0;
+  display: none;
+  .popupBody{
+    background: white;
+    border-radius: 2px;
+    position: fixed;
+    width: 85%;
+    height: 65%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    #popupExit{
+      position: fixed;
+      right: 10px;
+      top: 0px;
+      transform: rotate(45deg);
+      p{
+        margin: 0;
+        font-size: 2.5em;
+        font-family: arial;
+        transition-duration: .2s;
+        &:hover{
+          color: $lightGray;
+          cursor: pointer;
+        }
+      }
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 50%;
+      padding-right: $marginInit;
+      padding-left: $marginInit;
+      .header{
+        color: $darkGray;
+        font-size: 1.5em;
+        font-weight: 900;
+        margin-bottom: 0;
+      }
+      .input-subject, .input-email, textarea{
+          margin-top: 20px;
+          border: #aaa 1px solid;
+          padding: 9px 8px 8px 8px;
+          border-radius: 3px;
+          resize: none;
+      }
+      textarea{
+        max-height: 100px;
+      }
+      label{
+          color: $lightGray;
+      }
+      #submit{
+          width: 150px;
+          text-align: center;
+          background: none;
+          border: solid 1px $lightGray;
+          padding-top: 7px;
+          padding-bottom: 6px;
+          border-radius: 50px;
+          font-size: 1em;
+          text-decoration: none;
+          color: $darkGray;
+          transition-duration: .2s;
+          margin: 0 auto;
+          margin-top: 20px;
+          &:hover{
+              color: $darkGray;
+              border: solid 1px $darkGray;
+              cursor: pointer;
+              width: 168px;
+          }
+      }
+  }
+  }
+}
 //footer
 footer{
-    background: #d4dcde;
+    background: $darkGray;
     width: 100%;
     text-align: center;
     margin-top: 40px;
     p{
         margin: 0;
-        color: $darkGray;
+        color: white;
         font-size: .85em;
         padding: 8px 0px 7px 0px;
     }
@@ -422,7 +512,7 @@ footer{
     }
   }
   
-  #nav:checked {
+  #navClick:checked {
     + .nav-btn {
       transform: rotate(45deg);
       i {
