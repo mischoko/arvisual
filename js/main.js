@@ -29,13 +29,14 @@ window.onscroll = function() {
             logo.classList.remove("logoFix");
     }
 }
-
-var popupBtn = document.getElementById("btnDemoPop");
-var popup = document.getElementById("popupMain");
-var popupExit = document.getElementById("popupExit");
-    popupBtn.addEventListener("click", function (){
-        popup.style.display = "block"
-    });
-    popupExit.addEventListener("click", function(){
-        popup.style.display = "none"
-    });
+//scrolling function
+ document.querySelector('.menuContBtn').addEventListener("click", function(event) {
+    event.preventDefault();
+    var offset = 0, y = 0, dy, call = setInterval(function(){
+    	if( Math.abs(dy=offset-y)>1 ) y += dy/8;
+      else { clearInterval(call); y = offset; }
+      document.documentElement.scrollTop = y;
+    },10);
+    offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
+		y = document.documentElement.scrollTop;
+});
