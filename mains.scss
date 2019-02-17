@@ -143,7 +143,7 @@
 #case1{
   background: url('imgs/wooden_germany_cs.jpg')no-repeat;
   background-size: cover;
-  background-position-y: -220px;
+  background-position: center;
 }
 #case2{
   background: url('imgs/glamm_fire_cs.jpg')no-repeat;
@@ -366,6 +366,7 @@
         &:hover{
           color: $lightGray;
           cursor: pointer;
+          user-select: none; 
         }
       }
     }
@@ -606,7 +607,6 @@ footer{
         }
       }
     }
-  }
   
   #navClick:checked {
     + .nav-btn {
@@ -634,3 +634,35 @@ footer{
       }
     }
   }
+  .contact{
+    .containCont{
+      .contForm{
+        form{
+          label{
+            font-size: .9em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .aboutUs{
+    margin-top: 10px;
+  }
+  .contact{
+    .containCont{
+      margin-top: 10px;
+      .contForm{
+        flex-direction: column;
+        form{
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .downCont{
+    margin-top: 0px;
+  }
+}

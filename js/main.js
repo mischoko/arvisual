@@ -54,3 +54,14 @@ function fun() {
   } else {
   }
 }
+
+//popup request demo
+document.querySelector('#btnDemoPop').addEventListener("click", function(){
+  var popup = document.getElementById('popupMain');
+  var exit = document.getElementById('popupExit');
+  popup.style.display = "block";
+    
+  exit.addEventListener("click", function(){
+    popup.style.display = "none";
+    })
+})

@@ -155,7 +155,7 @@ nav ul li a:hover {
 #case1 {
   background: url("imgs/wooden_germany_cs.jpg") no-repeat;
   background-size: cover;
-  background-position-y: -220px;
+  background-position: center;
 }
 
 #case2 {
@@ -440,6 +440,10 @@ nav ul li a:hover {
 #popupMain .popupBody #popupExit p:hover {
   color: #787878;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #popupMain .popupBody form {
@@ -718,43 +722,60 @@ footer p {
   .nav-btn i:nth-child(3) {
     margin-top: 4px;
   }
+  #navClick:checked + .nav-btn {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #navClick:checked + .nav-btn i {
+    background: #000;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  }
+  #navClick:checked + .nav-btn i:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(180deg);
+            transform: translateY(6px) rotate(180deg);
+  }
+  #navClick:checked + .nav-btn i:nth-child(2) {
+    opacity: 0;
+  }
+  #navClick:checked + .nav-btn i:nth-child(3) {
+    -webkit-transform: translateY(-6px) rotate(90deg);
+            transform: translateY(-6px) rotate(90deg);
+  }
+  #navClick:checked ~ .nav-wrapper {
+    z-index: 9990;
+    opacity: 1;
+  }
+  #navClick:checked ~ .nav-wrapper ul li a {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .contact .containCont .contForm form label {
+    font-size: .9em;
+  }
 }
 
-#navClick:checked + .nav-btn {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-#navClick:checked + .nav-btn i {
-  background: #000;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
-}
-
-#navClick:checked + .nav-btn i:nth-child(1) {
-  -webkit-transform: translateY(6px) rotate(180deg);
-          transform: translateY(6px) rotate(180deg);
-}
-
-#navClick:checked + .nav-btn i:nth-child(2) {
-  opacity: 0;
-}
-
-#navClick:checked + .nav-btn i:nth-child(3) {
-  -webkit-transform: translateY(-6px) rotate(90deg);
-          transform: translateY(-6px) rotate(90deg);
-}
-
-#navClick:checked ~ .nav-wrapper {
-  z-index: 9990;
-  opacity: 1;
-}
-
-#navClick:checked ~ .nav-wrapper ul li a {
-  opacity: 1;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+@media screen and (max-width: 864px) {
+  .aboutUs {
+    margin-top: 10px;
+  }
+  .contact .containCont {
+    margin-top: 10px;
+  }
+  .contact .containCont .contForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .containCont .contForm form {
+    padding-right: 0;
+  }
+  .downCont {
+    margin-top: 0px;
+  }
 }
 /*# sourceMappingURL=mains.css.map */
