@@ -1,9 +1,14 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', Helvetica, sans-serif;
+    scroll-behavior: smooth;
   }
   p, h1, h2{
     text-rendering: optimizeLegibility !important;
+  }
+
+  .hidden {
+    display: none;
   }
 
   $darkGray: #393939;
@@ -502,10 +507,28 @@ footer{
 /////////////////////////////MEDIAQUERIES///////////////////////////////////
 /////////////////////////////MEDIAQUERIES///////////////////////////////////
 /////////////////////////////MEDIAQUERIES///////////////////////////////////
+@media screen and (max-width: 1200px) {
+  .aboutUs, .caseStudy > .containCs, .contact > .containCont, .requestDemo > .contDemo, .downCont{
+    margin-left: $marginMob;
+    margin-right: $marginMob;
+  }
+  .contact{
+    .containCont{
+      .contForm{
+        form{
+        padding-right: 10%;
+        }
+      }
+    }
+  }
+}
   @media screen and (max-width: 864px) {
     .logo {
       padding: 0;
       margin-top: 18px;
+    }
+    .logoFix{
+      margin-top: 11px !important;
     }
     .nav-wrapper {
       position: fixed;
@@ -610,8 +633,4 @@ footer{
         transform: translateX(0);
       }
     }
-  }
-  
-  .hidden {
-    display: none;
   }
