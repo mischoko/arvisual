@@ -67,8 +67,6 @@
       font-size: 18px;
       text-decoration: none;
       .mainLogo{
-        background: url('imgs/arvisual_logo.svg')no-repeat;
-        background-size: cover;
         width: 126px;
         height: 35px;
       }
@@ -147,6 +145,11 @@
 }
 #case2{
   background: url('imgs/glamm_fire_cs.jpg')no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#case3{
+  background: url('imgs/vzor.jpg')no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -305,6 +308,9 @@
       font-weight: 900;
       padding-top: 30px;
       margin-bottom: 0;
+      br{
+        display: none;
+      }
     }
     .par{
       color: white;
@@ -469,15 +475,15 @@
         line-height: 2em;
       }
     }
-    .socialMedia2{
-      display: none;
-    }
     .wrapOne{
       display: flex;
       flex-direction: row;
       flex-basis: 90%;
     }
   }
+}
+.socialMedia2{
+  display: none;
 }
 //footer
 footer{
@@ -522,6 +528,9 @@ footer{
     margin-left: $marginMob;
     margin-right: $marginMob;
   }
+  .mainImg{
+    height: 400px;
+  }
   .contact{
     .containCont{
       .contForm{
@@ -536,9 +545,14 @@ footer{
     .logo {
       padding: 0;
       margin-top: 18px;
+      left: 4%;
     }
     .logoFix{
       margin-top: 11px !important;
+    }
+    .mainImg{
+      height: 300px;
+      background-position: right;
     }
     .nav-wrapper {
       position: fixed;
@@ -601,7 +615,7 @@ footer{
         display: block;
         width: 20px;
         height: 2px;
-        background: #000;
+        background: white;
         border-radius: 2px;
         margin-left: 14px;
         &:nth-child(1) {
@@ -672,22 +686,22 @@ footer{
             margin-top: 30px;
           }
         }
-        .socialMedia2{
-          display: flex;
-          flex-direction: row;
-          margin-top: 50px;
-          justify-content: center;
-          i{
-            color: $darkGray;
-            font-size: 1.5em;
-            margin-right: 30px;
-            transition-duration: .2s;
-            &:hover{
-              color: $lightGray;
-              cursor: pointer;
-            }
-          } 
-        }
+    } 
+  }
+  .socialMedia2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+    i{
+      color: $darkGray;
+      font-size: 1.5em;
+      margin-right: 30px;
+      transition-duration: .2s;
+      &:hover{
+        color: $lightGray;
+        cursor: pointer;
+      }
     } 
   }
 }
@@ -709,5 +723,99 @@ footer{
   }
   .downCont{
     margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  h1{
+    font-size: 1.5em !important;
+  }
+  .aboutUs{
+    .header{
+      margin-bottom: 10px;
+    }
+  }
+  .caseStudy{
+    height: 290px;
+    .containCs{
+      .headCs{
+        padding-top: 30px;
+      }
+      .par{
+        margin-bottom: 40px;
+      }
+    }
+  }
+  .contact{
+    .containCont{
+      .contForm{
+        .contInfo{
+          .socialMedia{
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  .requestDemo{
+    margin-top: 30px;
+    .contDemo{
+      .header{
+        br{
+          display: block;
+        }
+      }
+    }
+  }
+  .downCont{
+    .downContContainer{
+      flex-direction: row;
+      .wrapOne{
+        flex-direction: column;
+        flex-basis: 50%;
+        align-items: center;
+        text-align: center;
+      }
+      .address{
+        flex-direction: column;
+        flex-basis: 50%;
+        align-items: center;
+        justify-items: left;
+      }
+    }
+  }
+}
+@media screen and (max-width: 430px) {
+  .caseStudy{
+    height: 300px;
+    .containCs{
+      .par{
+        font-size: .9em;
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .mainImg{
+    height: 250px;
+  }
+  .downCont{
+    .downContContainer{
+      flex-direction: column;
+      p{
+        margin-top: 0;
+      }
+      .address{
+        div{
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .socialMedia2{
+    margin-top: 30px;
+  }
+  footer{
+    margin-top: 25px;
   }
 }
