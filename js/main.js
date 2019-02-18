@@ -46,14 +46,15 @@ function fun() {
   var checkbox = document.getElementById('navClick');
   var bug = document.getElementById('mobileMenu');
   var contact = document.getElementsByClassName('menuItem')[4];
+  var width = window.innerWidth;
   if (checkbox.checked == true){
     bug.classList.remove('hidden');
     contact.addEventListener("click", function(){
         checkbox.checked = false;
     })
-  } else {
+  } else if (width > 864){
   }
-}
+};
 
 //popup request demo
 document.querySelector('#btnDemoPop').addEventListener("click", function(){
@@ -64,4 +65,11 @@ document.querySelector('#btnDemoPop').addEventListener("click", function(){
   exit.addEventListener("click", function(){
     popup.style.display = "none";
     })
-})
+});
+
+//fix on normal menu visibility
+var width = window.innerWidth;
+var bug = document.getElementById('mobileMenu');
+if(width > 864){
+    bug.classList.remove('hidden');
+}

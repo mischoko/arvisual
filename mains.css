@@ -571,12 +571,35 @@ nav ul li a:hover {
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   color: #787878;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .downCont .downContContainer .address strong {
   color: #393939;
   font-size: 1.2em;
   line-height: 2em;
+}
+
+.downCont .downContContainer .socialMedia2 {
+  display: none;
+}
+
+.downCont .downContContainer .wrapOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
 }
 
 footer {
@@ -756,9 +779,63 @@ footer p {
   .contact .containCont .contForm form label {
     font-size: .9em;
   }
+  .downCont .downContContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .downCont .downContContainer .sales, .downCont .downContContainer .management, .downCont .downContContainer .marketing {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .downCont .downContContainer .sales .socialMedia, .downCont .downContContainer .management .socialMedia, .downCont .downContContainer .marketing .socialMedia {
+    display: none;
+  }
+  .downCont .downContContainer .address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .downCont .downContContainer .address div {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    margin-top: 30px;
+  }
+  .downCont .downContContainer .socialMedia2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .downCont .downContContainer .socialMedia2 i {
+    color: #393939;
+    font-size: 1.5em;
+    margin-right: 30px;
+    -webkit-transition-duration: .2s;
+            transition-duration: .2s;
+  }
+  .downCont .downContContainer .socialMedia2 i:hover {
+    color: #787878;
+    cursor: pointer;
+  }
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 700px) {
   .aboutUs {
     margin-top: 10px;
   }

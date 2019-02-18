@@ -429,7 +429,6 @@
     font-size: 2em;
     font-weight: 900;
     text-align: center;
-
   }
   .downContContainer{
     display: flex;
@@ -462,11 +461,21 @@
     .address{
       flex-basis: 20%;
       color: $lightGray;
+      display: flex;
+      flex-direction: column;
       strong{
         color: $darkGray;
         font-size: 1.2em;
         line-height: 2em;
       }
+    }
+    .socialMedia2{
+      display: none;
+    }
+    .wrapOne{
+      display: flex;
+      flex-direction: row;
+      flex-basis: 90%;
     }
   }
 }
@@ -645,9 +654,45 @@ footer{
       }
     }
   }
+  .downCont{
+    .downContContainer{
+        display: flex;
+        flex-direction: column;
+        .sales, .management, .marketing{
+          flex-basis: 33%;
+          .socialMedia{
+            display: none;
+          }
+        }
+        .address{
+          display: flex;
+          flex-direction: row;
+          div{
+            flex-basis: 33%;
+            margin-top: 30px;
+          }
+        }
+        .socialMedia2{
+          display: flex;
+          flex-direction: row;
+          margin-top: 50px;
+          justify-content: center;
+          i{
+            color: $darkGray;
+            font-size: 1.5em;
+            margin-right: 30px;
+            transition-duration: .2s;
+            &:hover{
+              color: $lightGray;
+              cursor: pointer;
+            }
+          } 
+        }
+    } 
+  }
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 700px) {
   .aboutUs{
     margin-top: 10px;
   }
