@@ -19,7 +19,6 @@ window.onscroll = function() {
     var logoColor5 = document.getElementsByClassName('changeToBlack')[5];
     var logoColor6 = document.getElementsByClassName('changeToBlack')[6];
     var logoColor7 = document.getElementsByClassName('changeToBlack')[7];
-    var logoColor8 = document.getElementsByClassName('changeToBlack')[7];
     if ( window.pageYOffset > 100 ) {
             nav.classList.add("blackNav");
             color0.classList.add("darkOut");
@@ -40,7 +39,6 @@ window.onscroll = function() {
             logoColor5.style.fill = "black";
             logoColor6.style.fill = "black";
             logoColor7.style.fill = "black";
-            logoColor8.style.fill = "black";
     }
     else {
             nav.classList.remove("blackNav");
@@ -62,7 +60,6 @@ window.onscroll = function() {
             logoColor5.style.fill = "white";
             logoColor6.style.fill = "white";
             logoColor7.style.fill = "white";
-            logoColor8.style.fill = "white";
     }
 }
 //scrolling function
