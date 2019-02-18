@@ -1,18 +1,10 @@
-RewriteEngine on
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
 
 RewriteCond %{SERVER_PORT} !^443$
 RewriteRule (.*) https://%{HTTP_HOST}/$1 [NC,R=301,L]
 
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule (.*) https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-RewriteRule ^$ /en [L]
-
-RewriteRule ^sk/blog/([a-zA-Z0-9-/]+)$ sk/blog.php?s=$1 [L]
-RewriteRule ^en/blog/([a-zA-Z0-9-/]+)$ en/blog.php?s=$1 [L]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
-
-RewriteRule ^(.+)$ $1.php [L,QSA]

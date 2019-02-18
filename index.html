@@ -59,7 +59,7 @@
                   </div>
                   <div class="nav-wrapper hidden" id="mobileMenu">
                         <ul id="menu">
-                              <li><a class="menuItem" href="https://www.arvisua.eu/">Home</a></li>
+                              <li><a class="menuItem" href="https://www.arvisual.eu/">Home</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/augmented-reality">Augmented Reality</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/3d-modeling">3D modeling</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/blog">Blog</a></li>
@@ -86,7 +86,7 @@
                                     final result and provide the ultimate clarity both
                                     for client and for themselves.
                         </p>
-                        <a class="btnCs" href="#">More info<span><i class="fa fa-caret-right"></i></span></a>
+                        <wrapper><a class="btnCs" href="#">More info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
                   </div>
             </section>
             <section class="caseStudy" id="case2">
@@ -98,32 +98,32 @@
                                     solution for not only better promotion of their products
                                     but also as a useful sales tool.
                         </p>
-                        <a class="btnCs" href="#">More info<span><i class="fa fa-caret-right"></i></span></a>
+                        <wrapper><a class="btnCs" href="#">More info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
                   </div>
             </section>
             <section class="caseStudy" id="case3">
                   <div class="containCs">
                         <h1 class="headCs">VZÓR</h1>
                         <p class="par">
-                                    See how leading manufacturer of high end indoor
-                                    and outdoor fireplaces Glamm Fire uses Augmented Reality
-                                    solution for not only better promotion of their products
-                                    but also as a useful sales tool.
+                                    One of the top design companies in Poland - VZOR
+                                    decided to use the AR platform to better showcase
+                                    their unique product line. Check out the way in which
+                                    they utilize the features of Augmented Reality platform.
                         </p>
-                        <a class="btnCs" href="#">More info<span><i class="fa fa-caret-right"></i></span></a>
+                        <wrapper><a class="btnCs" href="#">More info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
                   </div>
             </section>
       
             <section class="contact">
                   <div class="containCont">
                         <div class="contForm">
-                              <form class="contact_form" action="php.php" method="POST" autocomplete="off">
+                              <form class="contact_form2" action="mailer.php" method="POST" autocomplete="off">
                                     <h1 class="header">Your own AR Solution?</h1>
-                                    <input class="input-email" id="userEmail" type="email" name="email" required placeholder="@">
-                                    <textarea class="input-message" id="message" type="text" name="message" rows="10" cols="30" required placeholder="Message"></textarea>
+                                    <input class="input-email2" id="userEmail" type="email" name="email" required placeholder="@">
+                                    <textarea class="input-message2" id="message" type="text" name="message" rows="10" cols="30" required placeholder="Message"></textarea>
                                     <div>
                                           <input type="checkbox" id="gdpr" name="gdpr" style="margin-top:18px;" required>
-                                          <label for="gdpr" class="gdpr">I agree with <a href="#">the policy</a> of AR Visual</label>
+                                          <label for="gdpr" class="gdpr">I agree with <a href="http://emojimedia.eu/sk/zasady-ochrany-osobnych-udajov/" target="_blank">the policy</a> of AR Visual</label>
                                     </div>
                                     <input id="submit" type="submit" name="submit" value="Submit">
                               </form>
@@ -154,8 +154,13 @@
             <div id="popupMain">
                   <div class="popupBody">
                         <div id="popupExit"><p class="exitBtn">+</p></div>
-                        <form class="contact_form" action="php.php" method="POST" autocomplete="off">
-                              <h1 class="header">Your own AR Solution?</h1>
+                        <div class="popImg"></div>
+                        <form class="contact_form calendar" action="mailer.php" method="POST" autocomplete="off">
+                              <h1 class="header">Would you like a demo?</h1>
+                              <p class="hook">Free demonstration of your products in Augmented Reality? No problem
+                                          just send us all the info, we will hook you up.
+                                    </p>
+                              <input class="input-subject" id="subject" type="text" name="subj" required placeholder="Subject">
                               <input class="input-email" id="userEmail" type="email" name="email" required placeholder="@">
                               <textarea class="input-message" id="message" type="text" name="message" rows="10" cols="30" required placeholder="Message"></textarea>
                               <div>
@@ -164,6 +169,18 @@
                               </div>
                               <input id="submit" type="submit" name="submit" value="Submit">
                         </form>
+                        <div class="successAlert">
+                              <h1>Thank you for reaching out</h1>
+                              <p>Your message has been sent successfuly, we will contact you ASAP.</p>
+                              <p>Meanwhile, why dont you see what's new?</p>
+                              <div class="socialMediaPopup">
+                                    <a href="https://www.facebook.com/arvisualofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/company/arvisual/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCKDOdMfVe6p29hEckLiSYKg" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/arvisualofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                              </div>
+                              <wrapper><button id="okBtn" class="allright">Allright</button></wrapper>
+                        </div>
                   </div>
             </div>
             <div class="downCont section" id="scrollContact">
@@ -221,7 +238,7 @@
             <div class="footCont">
                   <div class="footUnit">
                         <ul>
-                              <li><a class="menuItem" href="https://www.arvisua.eu/">Home</a></li>
+                              <li><a class="menuItem" href="https://www.arvisual.eu/">Home</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/augmented-reality">Augmented Reality</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/3d-modeling">3D modeling</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/blog">Blog</a></li>
@@ -230,7 +247,7 @@
                   <div class="footUnit">
                         <ul>
                               <li><a class="menuItem" href="#">Privacy policy</a></li>
-                              <li><a class="menuItem" href="#">Request a demo</a></li>
+                              <li><a class="menuItem" id="footDemo">Request a demo</a></li>
                               <li><a class="menuItem" href="#">Case studies</a></li>
                               <li><a class="menuItem" href="#">Team</a></li>
                         </ul>

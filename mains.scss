@@ -376,17 +376,35 @@
         }
       }
     }
+    .popImg{
+      background: url('imgs/popup_img.jpg')no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 200px;
+    }
     form{
       display: flex;
       flex-direction: column;
       flex-basis: 50%;
       padding-right: $marginInit;
       padding-left: $marginInit;
+      max-width: 750px;
+      margin: 0 auto;
       .header{
         color: $darkGray;
         font-size: 1.5em;
         font-weight: 900;
         margin-bottom: 0;
+        margin-top: 23px;
+        text-align: center;
+      }
+      .hook{
+        display: none;
+        color: $lightGray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1.6em;
       }
       .input-subject, .input-email, textarea{
           margin-top: 20px;
@@ -415,6 +433,7 @@
           transition-duration: .2s;
           margin: 0 auto;
           margin-top: 20px;
+          margin-bottom: 20px;
           &:hover{
               color: $darkGray;
               border: solid 1px $darkGray;
@@ -423,6 +442,55 @@
           }
       }
   }
+  .successAlert{
+    display: none;
+    h1{
+      color: #393939;
+      font-size: 1.5em;
+      font-weight: 900;
+      margin-bottom: 0;
+      text-align: center;
+      padding-top: 30px;
+    }
+    p{
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+    line-height: 1.6em;
+    }
+    .socialMediaPopup{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px;
+      i{
+        color: $darkGray;
+        font-size: 1.5em;
+        margin-right: 30px;
+        transition-duration: .2s;
+        &:hover{
+          color: $lightGray;
+          cursor: pointer;
+          }
+        }
+      }
+    }
+    .allright{
+      background: transparent;
+        font-size: 1em;
+        border: solid 1px $darkGray;
+        padding: 6px 24px 6px 24px;
+        border-radius: 50px;
+        color: $darkGray;
+        text-decoration: none;
+        transition-duration: .2s;
+        &:hover{
+          background: $lightGray;
+          cursor: pointer;
+          padding: 6px 33px 6px 33px;
+          color: $lightGray;
+        }
+    }
   }
 }
 //down contact
@@ -493,7 +561,9 @@ footer{
   .footCont{
     display: flex;
     flex-direction: row;
+    padding-top: 5px;
     .footUnit{
+      flex-basis: 20%;
       ul{
         list-style: none;
         li{
@@ -504,6 +574,7 @@ footer{
             font-size: .9em;
             transition-duration: .2s;
             &:hover{
+              cursor: pointer;
               color: $lightGray;
             }
           }
@@ -704,6 +775,13 @@ footer{
       }
     } 
   }
+  footer{
+    .footCont{
+      .footUnit{
+        flex-basis: 35%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -724,6 +802,16 @@ footer{
   .downCont{
     margin-top: 0px;
   }
+  footer{
+    .footCont{
+      padding-left: $marginMob;
+      .footUnit{
+        ul{
+          padding: 0;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -738,6 +826,11 @@ footer{
   .caseStudy{
     height: 290px;
     .containCs{
+      wrapper{
+        display: block;
+        width: 100;
+        text-align: center;
+      }
       .headCs{
         padding-top: 30px;
       }
@@ -765,6 +858,9 @@ footer{
           display: block;
         }
       }
+      .par{
+        font-size: .9em;
+      }
     }
   }
   .downCont{
@@ -784,6 +880,27 @@ footer{
       }
     }
   }
+  #popupMain{
+    .popupBody{
+      overflow-y: auto;
+      overflow-x: hidden;
+      .popImg{
+        height: 120px;
+      }
+      form{
+        .header{
+          font-size: 1.2em !important;
+        }
+      }
+    }
+  }
+  footer{
+    .footCont{
+      .footUnit{
+        flex-basis: 50%;
+      }
+    }
+  }
 }
 @media screen and (max-width: 430px) {
   .caseStudy{
@@ -791,6 +908,28 @@ footer{
     .containCs{
       .par{
         font-size: .9em;
+      }
+    }
+  }
+  #popupMain{
+    .popupBody{
+      height: 80%;
+      top: 55%;
+      .popImg{
+        height: 120px;
+      }
+      form{
+        padding-left: $marginMob;
+        padding-right: $marginMob;
+        .header{
+          margin-top: 25px;
+        }
+        .gdpr{
+          font-size: .85em;
+        }
+        #submit{
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -817,5 +956,26 @@ footer{
   }
   footer{
     margin-top: 25px;
+  }
+  #popupMain{
+    .popupBody{
+      .popImg{
+       display: none;
+      }
+      form{
+        .header{
+          margin-top: 55px;
+        }
+      }
+    }
+  }
+  footer{
+    .footCont{
+      .footUnit{
+        &:nth-of-type(2){
+          padding-left: 15px;
+        }
+      }
+    }
   }
 }
