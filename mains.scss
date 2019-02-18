@@ -355,10 +355,21 @@
     border-radius: 2px;
     position: fixed;
     width: 85%;
+    max-width: 700px;
     height: 65%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow-y: auto;
+    overflow-x: hidden;
+    .successAlert{
+      wrapper{
+        display: block;
+        width: 100;
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
     #popupExit{
       position: fixed;
       right: 10px;
@@ -485,10 +496,11 @@
         text-decoration: none;
         transition-duration: .2s;
         &:hover{
-          background: $lightGray;
+          background: transparent;
           cursor: pointer;
           padding: 6px 33px 6px 33px;
           color: $lightGray;
+          border-color: $lightGray;
         }
     }
   }
@@ -882,14 +894,19 @@ footer{
   }
   #popupMain{
     .popupBody{
-      overflow-y: auto;
-      overflow-x: hidden;
       .popImg{
         height: 120px;
       }
       form{
         .header{
           font-size: 1.2em !important;
+        }
+      }
+      .successAlert{
+        wrapper{
+          display: block;
+          width: 100;
+          text-align: center;
         }
       }
     }
@@ -929,6 +946,14 @@ footer{
         }
         #submit{
           margin-bottom: 20px;
+        }
+      }
+      .successAlert{
+        h1{
+          font-size: 1.1em !important;
+        }
+        p{
+          font-size: .9em;
         }
       }
     }

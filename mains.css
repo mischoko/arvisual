@@ -422,11 +422,21 @@ nav ul li a:hover {
   border-radius: 2px;
   position: fixed;
   width: 85%;
+  max-width: 700px;
   height: 65%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#popupMain .popupBody .successAlert wrapper {
+  display: block;
+  width: 100;
+  text-align: center;
+  margin-top: 30px;
 }
 
 #popupMain .popupBody #popupExit {
@@ -596,10 +606,11 @@ nav ul li a:hover {
 }
 
 #popupMain .popupBody .allright:hover {
-  background: #787878;
+  background: transparent;
   cursor: pointer;
   padding: 6px 33px 6px 33px;
   color: #787878;
+  border-color: #787878;
 }
 
 .downCont {
@@ -1041,15 +1052,16 @@ footer p {
             align-items: center;
     justify-items: left;
   }
-  #popupMain .popupBody {
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
   #popupMain .popupBody .popImg {
     height: 120px;
   }
   #popupMain .popupBody form .header {
     font-size: 1.2em !important;
+  }
+  #popupMain .popupBody .successAlert wrapper {
+    display: block;
+    width: 100;
+    text-align: center;
   }
   footer .footCont .footUnit {
     -ms-flex-preferred-size: 50%;
@@ -1083,6 +1095,12 @@ footer p {
   }
   #popupMain .popupBody form #submit {
     margin-bottom: 20px;
+  }
+  #popupMain .popupBody .successAlert h1 {
+    font-size: 1.1em !important;
+  }
+  #popupMain .popupBody .successAlert p {
+    font-size: .9em;
   }
 }
 
