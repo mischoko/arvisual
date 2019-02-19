@@ -276,12 +276,15 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 650px) {
     .about{
         flex-direction: column;
         margin-top: 0px;
         .client, .task{
             padding: 0;
+            h1{
+                text-align: center;
+            }
         }
         .task{
             h1{
@@ -293,6 +296,9 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         h1{
             margin-top: 0;
         }
+        p{
+            text-align: left;
+        }
     }
     .video{
         margin-top: 50px;
@@ -302,5 +308,44 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
 @media screen and (max-width: 550px) {
     .mainImg{
         background-position: center;
+    }
+    .requestDemo{
+        .contDemo{
+            .header{
+                padding-top: 20px;
+                margin-top: 0;
+            }
+            .par{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            wrapper{
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .download{
+        margin-bottom: 20px;
+        p{
+            padding-top: 20px;
+            margin-bottom: 10px;
+        }
+        .dloadIcons{
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .download{
+        p{
+            font-size: 1em;
+        }
+        .dloadIcons{
+            padding-bottom: 20px;
+            .android, .apple{
+                width: 120px;
+            }
+        }
     }
 }
