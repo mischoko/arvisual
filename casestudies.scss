@@ -29,6 +29,49 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         text-shadow: black 2px 2px 3px;
     }
 }
+.mainImgVzor{
+    background: url('imgs/vzor.jpg')no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .name{
+        color: white;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    .tagline{
+        font-size: .9em;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+.mainImgWG{
+    background: url('imgs/wooden_germany_cs.jpg')no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .name{
+        color: white;
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    .tagline{
+        font-size: .9em;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+    }
+}
+
 //about section
 .about{
     width: 100%;
@@ -74,18 +117,22 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         line-height: 1.6em;
     }
 }
-.video{
-    margin-top: 70px;
-    position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+.marginVid{
+    margin-left: $marginInit;
+    margin-right: $marginInit;
+    .video{
+        margin-top: 70px;
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 .download{
@@ -158,6 +205,10 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         padding-left: $marginMob;
         padding-right: $marginMob;        
     }
+    .marginVid{
+        margin-left: $marginMob;
+        margin-right: $marginMob;
+    }
 }
 
 @media screen and (max-width: 964px) {
@@ -169,7 +220,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     .logoFix{
       margin-top: 11px !important;
     }
-    .mainImg{
+    .mainImg, .mainImgVzor{
       height: 300px;
       background-position: right;
     }
@@ -302,13 +353,17 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
             text-align: left;
         }
     }
-    .video{
-        margin-top: 50px;
+    .marginVid{
+        margin-left: 0;
+        margin-right: 0;
+        .video{
+            margin-top: 50px;
+        }
     }
 }
 
 @media screen and (max-width: 550px) {
-    .mainImg{
+    .mainImg, .mainImgVzor{
         background-position: center;
     }
     .requestDemo{

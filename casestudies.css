@@ -1173,6 +1173,72 @@ footer p {
   text-shadow: black 2px 2px 3px;
 }
 
+.mainImgVzor {
+  background: url("imgs/vzor.jpg") no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainImgVzor .name {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 10px;
+}
+
+.mainImgVzor .tagline {
+  font-size: .9em;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
+.mainImgWG {
+  background: url("imgs/wooden_germany_cs.jpg") no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainImgWG .name {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 10px;
+}
+
+.mainImgWG .tagline {
+  font-size: .9em;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
 .about {
   width: 100%;
   padding-left: 18%;
@@ -1232,7 +1298,12 @@ footer p {
   line-height: 1.6em;
 }
 
-.video {
+.marginVid {
+  margin-left: 18%;
+  margin-right: 18%;
+}
+
+.marginVid .video {
   margin-top: 70px;
   position: relative;
   padding-bottom: 56.25%;
@@ -1241,7 +1312,7 @@ footer p {
   height: 0;
 }
 
-.video iframe {
+.marginVid .video iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -1336,6 +1407,10 @@ footer p {
     padding-left: 4%;
     padding-right: 4%;
   }
+  .marginVid {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
 }
 
 @media screen and (max-width: 964px) {
@@ -1347,7 +1422,7 @@ footer p {
   .logoFix {
     margin-top: 11px !important;
   }
-  .mainImg {
+  .mainImg, .mainImgVzor {
     height: 300px;
     background-position: right;
   }
@@ -1491,13 +1566,17 @@ footer p {
   .challenge p {
     text-align: left;
   }
-  .video {
+  .marginVid {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .marginVid .video {
     margin-top: 50px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .mainImg {
+  .mainImg, .mainImgVzor {
     background-position: center;
   }
   .requestDemo .contDemo .header {
