@@ -6,16 +6,163 @@ $marginInit: 18%;
 $marginMob: 4%;
 $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
 
+.mainImg{
+    background: url('imgs/glamm_fire_cs.jpg')no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .name{
+        color: white;
+        align-self: center;
+        margin-bottom: 10px;
+        text-shadow: black 2px 2px 7px;
+    }
+    .tagline{
+        font-size: .9em;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+        text-shadow: black 2px 2px 3px;
+    }
+}
+//about section
+.about{
+    width: 100%;
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    h1{
+        color: $darkGray;
+        margin-bottom: 15px;
+        font-size: 2em;
+    }
+    p{
+        color: $lightGray;
+        margin-top: 0;
+        margin-bottom: 30px;
+        line-height: 1.6em;
+    }
+    .client{
+        padding-right: 50px;
+    }
+    .task{
+        padding-left: 50px;
+    }
+}
+.challenge{
+    width: 100%;
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    text-align: center;
+    h1{
+        color: $darkGray;
+        margin-bottom: 15px;
+        font-size: 2em;
+    }
+    p{
+        color: $lightGray;
+        margin-top: 0;
+        margin-bottom: 30px;
+        line-height: 1.6em;
+    }
+}
+.video{
+    margin-top: 70px;
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.download{
+    background: $grad;
+    width: 100%;
+    p{
+        font-size: 1.3em;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .dloadIcons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 30px;
+        .apple{
+            background: url('imgs/apple.svg')no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 150px;
+            height: 60px;
+            margin-right: 10px;
+        }
+        .android{
+            background: url('imgs/google.svg')no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 150px;
+            height: 60px;
+            margin-left: 10px;
+        }
+    }    
+}
 
-
-
-
+.requestDemo{
+    background: none;
+    margin-top: 0;
+    .contDemo{
+        .header{
+            color: $darkGray;
+        }
+        .par{
+            color: $lightGray;
+        }
+        wrapper{
+            display: block;
+            padding-bottom: 40px;
+            .btnDemo{
+              background: transparent;
+              font-size: 1em;
+              border: solid 1px $darkGray;
+              padding: 6px 24px 6px 24px;
+              border-radius: 50px;
+              color: $darkGray;
+              text-decoration: none;
+              transition-duration: .2s;
+              &:hover{
+                cursor: pointer;
+                padding: 6px 33px 6px 33px;
+                color: $lightGray;
+                border-color: $lightGray;
+              }
+            }
+          }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .about, .challenge{
+        padding-left: $marginMob;
+        padding-right: $marginMob;        
+    }
+}
 
 @media screen and (max-width: 964px) {
     .logo {
       padding: 0;
       margin-top: 18px;
-      left: 4%;
+      left: 2.5%;;
     }
     .logoFix{
       margin-top: 11px !important;
@@ -127,58 +274,33 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
       }
     }
   }
-  .contact{
-    .containCont{
-      .contForm{
-        form{
-          label{
-            font-size: .9em;
-          }
-        }
-      }
-    }
-  }
-  .downCont{
-    .downContContainer{
-        display: flex;
+}
+
+@media screen and (max-width: 1200px) {
+    .about{
         flex-direction: column;
-        .sales, .management, .marketing{
-          flex-basis: 33%;
-          .socialMedia{
-            display: none;
-          }
+        margin-top: 0px;
+        .client, .task{
+            padding: 0;
         }
-        .address{
-          display: flex;
-          flex-direction: row;
-          div{
-            flex-basis: 33%;
-            margin-top: 30px;
-          }
+        .task{
+            h1{
+                margin-top: 0;
+            }
         }
-    } 
-  }
-  .socialMedia2{
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
-    justify-content: center;
-    i{
-      color: $darkGray;
-      font-size: 1.5em;
-      margin-right: 30px;
-      transition-duration: .2s;
-      &:hover{
-        color: $lightGray;
-        cursor: pointer;
-      }
-    } 
-  }
-  footer{
-    .footCont{
-      .footUnit{
-        flex-basis: 35%;
-      }
     }
-  }
-}    
+    .challenge{
+        h1{
+            margin-top: 0;
+        }
+    }
+    .video{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mainImg{
+        background-position: center;
+    }
+}
