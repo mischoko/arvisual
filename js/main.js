@@ -80,7 +80,7 @@ function fun() {
   var i2 = document.getElementsByClassName('ipart')[2];
   var checkbox = document.getElementById('navClick');
   var bug = document.getElementById('mobileMenu');
-  var contact = document.getElementsByClassName('menuItem')[4];
+  var contact = document.getElementsByClassName('menuContBtn')[0];
   if (checkbox.checked == true){
     bug.classList.remove('hidden');
     i0.style.background = "black";
