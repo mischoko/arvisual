@@ -417,14 +417,40 @@ nav ul li a:hover {
   display: none;
 }
 
+#popupMain #popupExit {
+  position: fixed;
+  right: 10px;
+  top: 80px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#popupMain #popupExit p {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: arial;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  color: white;
+}
+
+#popupMain #popupExit p:hover {
+  color: #aaa;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 #popupMain .popupBody {
   background: white;
   border-radius: 2px;
   position: fixed;
   width: 85%;
   max-width: 700px;
-  height: 65%;
-  top: 50%;
+  height: 80%;
+  top: 53%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -437,31 +463,6 @@ nav ul li a:hover {
   width: 100;
   text-align: center;
   margin-top: 30px;
-}
-
-#popupMain .popupBody #popupExit {
-  position: fixed;
-  right: 10px;
-  top: 0px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-#popupMain .popupBody #popupExit p {
-  margin: 0;
-  font-size: 2.5em;
-  font-family: arial;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
-}
-
-#popupMain .popupBody #popupExit p:hover {
-  color: #787878;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 #popupMain .popupBody .popImg {

@@ -350,14 +350,32 @@
   top: 0;
   left: 0;
   display: none;
+  #popupExit{
+    position: fixed;
+    right: 10px;
+    top: 80px;
+    transform: rotate(45deg);
+    p{
+      margin: 0;
+      font-size: 2.5em;
+      font-family: arial;
+      transition-duration: .2s;
+      color: white;
+      &:hover{
+        color: #aaa;
+        cursor: pointer;
+        user-select: none; 
+      }
+    }
+  }
   .popupBody{
     background: white;
     border-radius: 2px;
     position: fixed;
     width: 85%;
     max-width: 700px;
-    height: 65%;
-    top: 50%;
+    height: 80%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: auto;
@@ -368,23 +386,6 @@
         width: 100;
         text-align: center;
         margin-top: 30px;
-      }
-    }
-    #popupExit{
-      position: fixed;
-      right: 10px;
-      top: 0px;
-      transform: rotate(45deg);
-      p{
-        margin: 0;
-        font-size: 2.5em;
-        font-family: arial;
-        transition-duration: .2s;
-        &:hover{
-          color: $lightGray;
-          cursor: pointer;
-          user-select: none; 
-        }
       }
     }
     .popImg{
