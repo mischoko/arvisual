@@ -1202,10 +1202,14 @@ footer p {
 
 .about .client {
   padding-right: 50px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .about .task {
   padding-left: 50px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .challenge {

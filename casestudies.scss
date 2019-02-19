@@ -50,9 +50,11 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     }
     .client{
         padding-right: 50px;
+        flex-basis: 50%;
     }
     .task{
         padding-left: 50px;
+        flex-basis: 50%;
     }
 }
 .challenge{
