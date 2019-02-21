@@ -1,0 +1,17 @@
+@import 'mains';
+@import 'casestudies';
+
+$darkGray: #393939;
+$lightGray: #787878;
+$marginInit: 18%;
+$marginMob: 4%;
+$grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
+
+//main image top
+.mainImg{
+    background: url('imgs/3d_modeling.jpg')no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 500px;
+    width: 100%;
+}

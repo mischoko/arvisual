@@ -136,7 +136,7 @@ document.getElementById('okBtn').addEventListener("click", function(){
 //fix on normal menu visibility
 var width = window.innerWidth;
 var bug = document.getElementById('mobileMenu');
-if(width > 864){
+if(width > 964){
     bug.classList.remove('hidden');
 }
 //mailer script

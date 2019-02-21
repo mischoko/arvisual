@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>AR Visual</title>
-      <link rel="stylesheet" href="casestudies.css">
+      <link rel="stylesheet" href="mains.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
 <body>
@@ -60,7 +60,7 @@
                   <div class="nav-wrapper hidden" id="mobileMenu">
                         <ul id="menu">
                               <li><a class="menuItem" href="https://www.arvisual.eu/">Home</a></li>
-                              <li><a class="menuItem" href="https://www.arvisual.eu/neue/case_studies">Case Studies</a></li>
+                              <li><a class="menuItem" href="case_studies">Case studies</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/augmented-reality">Augmented Reality</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/3d-modeling">3D modeling</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/blog">Blog</a></li>
@@ -68,56 +68,88 @@
                         </ul>
                   </div>
             </nav>
-            <div class="mainImgWG">
-                  <h1 class="name">WOODEN Germany</h1>
-                  <p class="tagline">Light in new quality</p>
-            </div>
+            <div class="mainImg"></div>
       </div>
       <main>
-            <section class="about">
-                  <div class="client">
-                        <h1 class="header">Client</h1>
-                        <p class="par">WOODEN Germany creates unique lighting, furniture and wall decorations by utilizing real wood
-                              veneers and modern LED technology. Everything is fully customizable with the ability to control the light
-                              by your smart device.
-                        </p>
-                  </div>
-                  <div class="task">
-                        <h1 class="header">Task</h1>
-                        <p class="par">The idea behind this is better explained in the video below by the CEO Genrih Missal in which
-                              he talks about how important it is to gain visual validation and clarity for the end customer by actually
-                              seeing products placed in real world.
-                        </p>
-                  </div>
-            </section>
-            <section class="challenge">
-                  <h1 class="header">Challenge</h1>
-                  <p class="par">The greatest emphasis was on creating the wooden veneer textures such as they are in reality, which
-                        was not an easy task, however we managed to perfect it eventually even with the "turn the light on" effect added.
+            <section class="aboutUs">
+                  <h1 class="header">Case studies</h1>
+                  <p class="par">Over the years we have managed to collaborate with quite a number of clients for whom we provided either 
+                                    the Augmented Reality platform solution or developed a full-fledged custom Augmented Reality application.
                   </p>
+                  <div class="companies"><img class="logos" src="imgs/testimonials.jpg"></div>
             </section>
-            <div style="background: #393939;"><div class="marginVid"><div class="video"><iframe frameborder="0" src="https://www.youtube.com/embed/U0-vT1rf9RM/"></iframe></div></div></div>
-            <section class="results">
-                  <h1 class="header">Solution and results</h1>
-                  <wrapper>
-                        <div class="resLeft">
-                              <p class="par">To accomodate both the need for flexibility in the process of showcasing the products on site
-                                    and the desire to further position the brand as a leader by keeping up top par with the latest technology,
-                                    we decided to put the first batch of products on our Augmented Reality platform.</p>
+            <section class="caseStudy" id="case1">
+                  <div class="containCs">
+                        <h1 class="headCs">WOODEN Germany</h1>
+                        <p class="par">
+                                    Discover in what way is WOODEN Germany uses
+                                    the custom appliaction in order to visualise the
+                                    final result and provide the ultimate clarity both
+                                    for client and for themselves.
+                        </p>
+                        <wrapper><a class="btnCs" href="woodengermany">More info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
+                  </div>
+            </section>
+            <section class="caseStudy" id="case2">
+                  <div class="containCs">
+                        <h1 class="headCs">Glamm Fire</h1>
+                        <p class="par">
+                                    See how leading manufacturer of high end indoor
+                                    and outdoor fireplaces Glamm Fire uses Augmented Reality
+                                    solution for not only better promotion of their products
+                                    but also as a useful sales tool.
+                        </p>
+                        <wrapper><a class="btnCs" href="glammfire">More info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
+                  </div>
+            </section>
+            <section class="caseStudy" id="case3">
+                  <div class="containCs">
+                        <h1 class="headCs">VZÓR</h1>
+                        <p class="par">
+                                    One of the top design companies in Poland - VZOR
+                                    decided to use the AR platform to better showcase
+                                    their unique product line. Check out the way in which
+                                    they utilize the features of Augmented Reality platform.
+                        </p>
+                        <wrapper><a class="btnCs" href="vzor">More info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
+                  </div>
+            </section>
+      
+            <section class="contact">
+                  <div class="containCont">
+                        <div class="contForm">
+                              <form class="contact_form2" action="mailer.php" method="POST" autocomplete="off">
+                                    <h1 class="header">Your own AR Solution?</h1>
+                                    <input class="input-email2" id="userEmail" type="email" name="email" required placeholder="@">
+                                    <textarea class="input-message2" id="message" type="text" name="message" rows="10" cols="30" required placeholder="Message"></textarea>
+                                    <div>
+                                          <input type="checkbox" id="gdpr" name="gdpr" style="margin-top:18px;" required>
+                                          <label for="gdpr" class="gdpr">I agree with <a href="http://emojimedia.eu/sk/zasady-ochrany-osobnych-udajov/" target="_blank">the policy</a> of AR Visual</label>
+                                    </div>
+                                    <input id="submit" type="submit" name="submit" value="Submit">
+                              </form>
+                              <div class="contInfo">
+                                    <h1 class="header">Let's be social</h1>
+                                     <p class="par">If you are eagre to talk about Augmented Reality or you wish to simply follow
+                                           latest trends in the field of AR for furniture and home decor, check out our social feed
+                                           and discover what do we have in store for you.
+                                     </p>
+                                    <div class="socialMedia">
+                                          <a href="https://www.facebook.com/arvisualofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                          <a href="https://www.linkedin.com/company/arvisual/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                          <a href="https://www.youtube.com/channel/UCKDOdMfVe6p29hEckLiSYKg" target="_blank"><i class="fab fa-youtube"></i></a>
+                                          <a href="https://www.instagram.com/arvisualofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                              </div>
                         </div>
-                        <div class="resRight">
-                              <p class="par">As a result of this, WOODEN Germany is able to showcase their products more efficiently, meaning
-                                    the process of communication and validation with the client has rapidly shortened and the entire sales strategy
-                                    was improved by the ability to utilize real time visualisation of products in AR.
-                              </p>
-                        </div>
-                  </wrapper>
-            </section>            
-            <section class="download">
-                  <p>Download our AR application here:</p>
-                  <div class="dloadIcons">
-                        <a href="https://itunes.apple.com/sk/developer/ar-visual-s-r-o/id1402060998?mt=8" target="_blank"><div class="apple"></div></a>
-                        <a href="https://play.google.com/store/apps/dev?id=7680375424251010052" target="_blank"><div class="android"></div></a>
+                  </div>
+            </section>
+            <section class="requestDemo">
+                  <div class="contDemo">
+                        <h1 class="header">Interested yet?<br> We got you covered!</h1>
+                        <p class="par">If you are curious about the technology or your wish to see your
+                                    products visualized in Augmented Reality, let us know!</p>
+                        <wrapper><button id="btnDemoPop" class="btnDemo">Request a demo</button></wrapper>
                   </div>
             </section>
             <div id="popupMain">
@@ -224,6 +256,6 @@
             </div>
             <p>&copy; 2019 AR Visual</p>
       </footer>
-      <script src="js/case.js"></script>
+      <script src="js/main.js"></script>
 </body>
 </html>

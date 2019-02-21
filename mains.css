@@ -289,6 +289,7 @@ nav ul li a:hover {
 
 .contact .containCont .contForm form label {
   color: #787878;
+  font-size: .85em;
 }
 
 .contact .containCont .contForm form #submit {
@@ -770,7 +771,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 964px) {
   .logo {
     padding: 0;
     margin-top: 18px;
