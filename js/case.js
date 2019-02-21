@@ -65,6 +65,16 @@ window.onscroll = function() {
             logoColor7.style.fill = "white";
     }
 }
+
+//fix on normal menu visibility
+var width = window.innerWidth;
+var bug = document.getElementById('mobileMenu');
+if(width > 964){
+    bug.classList.remove('hidden');
+}else{
+  bug.classList.add('hidden');
+}
+
 //scrolling function
  document.querySelector('.menuContBtn').addEventListener("click", function(event) {
     event.preventDefault();
@@ -93,6 +103,7 @@ function fun() {
         checkbox.checked = false;
     })
   } else if (checkbox.checked == false){
+    bug.classList.add('hidden');
     i0.style.background = "white";
     i1.style.background = "white";
     i2.style.background = "white";
@@ -133,12 +144,6 @@ document.getElementById('okBtn').addEventListener("click", function(){
   var popup = document.getElementById('popupMain');
       popup.style.display = "none";
 });
-//fix on normal menu visibility
-var width = window.innerWidth;
-var bug = document.getElementById('mobileMenu');
-if(width > 964){
-    bug.classList.remove('hidden');
-}
 //mailer script
 !function(){
     var contactForm = document.querySelector('.contact_form');
