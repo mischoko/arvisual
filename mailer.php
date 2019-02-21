@@ -9,14 +9,14 @@ if (empty($subj) || empty($email) || empty($message)) {
     exit();
 }
 $headers = "From: demo@arvisual.eu" . "\r\n" .
-           "Reply-To: $email" . "\r\n" .
+           "Reply-To: $message" . "\r\n" .
            'X-Mailer: PHP/' . phpversion() .
            'MIME-Version: 1.0' . "\r\n" .
            'Content-Type: text/html; charset=utf-8' . "\r\n";
 $txt = "<html>
         <body>
-            <p>Od: " . $email . " <br>
-            " . $message . "</p>
+            <p>Od: " . $message . " <br>
+            " . $email . "</p>
         </body>
             </html>";
 mail($to, $subj, $txt, $headers);
