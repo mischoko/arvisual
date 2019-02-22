@@ -245,6 +245,14 @@
                 label{
                     color: $lightGray;
                     font-size: .85em;
+                    a{
+                      text-decoration: underline;
+                      color: $lightGray;
+                      transition-duration: .2s;
+                      &:hover{
+                        color: #aaa;
+                      }
+                    }
                 }
                 #submit{
                     width: 150px;

@@ -1188,4 +1188,55 @@ footer p {
     padding-left: 15px;
   }
 }
-/*# sourceMappingURL=mains.css.map */
+
+.privImg {
+  background: url("imgs/privacy.jpg") no-repeat;
+  background-size: cover;
+  background-position: left;
+  height: 500px;
+  width: 100%;
+}
+
+.containGdpr {
+  padding-left: 18%;
+  padding-right: 18%;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.containGdpr h1 {
+  color: #393939;
+  font-weight: 900;
+  margin-bottom: 0px;
+  margin-top: 40px;
+}
+
+.containGdpr p {
+  color: #787878;
+  line-height: 1.6em;
+  margin-top: 10px;
+}
+
+.containGdpr .pFirst {
+  margin-top: 20px;
+}
+
+.containGdpr ul {
+  list-style-type: square;
+  color: #787878;
+  line-height: 1.6em;
+}
+
+@media screen and (max-width: 964px) {
+  .containGdpr {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containGdpr h1 {
+    font-size: 1.2em !important;
+  }
+}
+/*# sourceMappingURL=privacy.css.map */

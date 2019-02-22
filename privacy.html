@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>AR Visual</title>
-      <link rel="stylesheet" href="mains.css">
+      <link rel="stylesheet" href="privacy.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
       <link rel="shortcut icon" href="imgs/favicon.png">
 </head>
@@ -64,132 +64,47 @@
                               <li><a class="menuItem" href="case_studies">Case studies</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/augmented-reality">Augmented Reality</a></li>
                               <li><a class="menuItem" href="https://www.arvisual.eu/en/3d-modeling">3D modeling</a></li>
-                              <li><a class="menuItem" href="https://www.arvisual.eu/en/blog">Blog</a></li>
+                              <li><a class="menuItem" href="https://medium.com/@ARVISUAL">Blog</a></li>
                               <li><a class="menuItem menuContBtn" href="#" data-scroll="scrollContact">Contact</a></li>
                         </ul>
                   </div>
             </nav>
-            <div class="mainImg"></div>
+            <div class="privImg"></div>
       </div>
       <main>
-            <section class="aboutUs">
-                  <h1 class="header">Case studies</h1>
-                  <p class="par">Over the years we have managed to collaborate with quite a number of clients for whom we provided either 
-                                    the Augmented Reality platform solution or developed a full-fledged custom Augmented Reality application.
-                  </p>
-                  <div class="companies"><img class="logos" src="imgs/testimonials.jpg"></div>
+            <section class="containGdpr">
+                  <h1 class="header">GDPR Compliant Privacy Policy</h1>
+                  <p>With accordance to Article 13 EU General Data Protection Regulation (EU-GDPR).</p>
+                  <p class="pFirst">As by filling out the contact form consists a provision of your personal information,
+                              we would like to inform you about your rights and terms of conditions concerning our
+                              privacy policy. Also we would like to reassure you that keeping your sensitive information
+                              is of utmost importance to us as a company.</p>
+                  <h1>The scope of use of your personal information:</h1>
+                  <p>All the information that you fill in the contact form such as name, subject, email address,
+                              contents of your message and any other data with similar significance are being used and kept
+                              solely for the purpose of contacting your and replying to your message.</p>
+                  <h1>Applicable rights according to GDPR concerning the storage and handling of personal information:</h1>
+                  <ul>
+                        <li>right to ask a permission to access your personal information</li>
+                        <li>right to correct or change your personal information</li>
+                        <li>right to ask for a removal of your personal information from the database</li>
+                        <li>right to modify the range of use of your personal information</li>
+                        <li>right to object to the processing of your personal information</li>
+                        <li>right to validity of your personal information</li>
+                  </ul>
+                  <p>In case you wish to apply any of the right listed above, please contact us using the email address
+                              info@arvisual.eu.</p>
+                  <p>You also possess the right to ask for a dicontinuation of storage of your personal information
+                              and consequent removal of your personal information from our database. To do so, please contact us
+                              using the email address info@arvisual.eu The canceling of your agreement to provide your personal 
+                              information has no effect whatsoever on previous lawfulness of storage and use of your personal information
+                              before the canceling.</p>
+                  <p>The provision of agreement with storing and usage of your personal information is voluntary.
+                              Consequence of providing incorrect information is such that we will not be able to contact you back
+                              or that your message comes across misconstrued. We do not take any responsibilities for what information
+                              you provide us with, although we are bound by law to keep it private.</p>
             </section>
-            <section class="caseStudy" id="case1">
-                  <div class="containCs">
-                        <h1 class="headCs">WOODEN Germany</h1>
-                        <p class="par">
-                                    Discover in what way is WOODEN Germany uses
-                                    the custom appliaction in order to visualise the
-                                    final result and provide the ultimate clarity both
-                                    for client and for themselves.
-                        </p>
-                        <wrapper><a class="btnCs" href="woodengermany">More info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
-                  </div>
-            </section>
-            <section class="caseStudy" id="case2">
-                  <div class="containCs">
-                        <h1 class="headCs">Glamm Fire</h1>
-                        <p class="par">
-                                    See how leading manufacturer of high end indoor
-                                    and outdoor fireplaces Glamm Fire uses Augmented Reality
-                                    solution for not only better promotion of their products
-                                    but also as a useful sales tool.
-                        </p>
-                        <wrapper><a class="btnCs" href="glammfire">More info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
-                  </div>
-            </section>
-            <section class="caseStudy" id="case3">
-                  <div class="containCs">
-                        <h1 class="headCs">VZÓR</h1>
-                        <p class="par">
-                                    One of the top design companies in Poland - VZOR
-                                    decided to use the AR platform to better showcase
-                                    their unique product line. Check out the way in which
-                                    they utilize the features of Augmented Reality platform.
-                        </p>
-                        <wrapper><a class="btnCs" href="vzor">More info<span><i class="fa fa-caret-right"></i></span></a></wrapper>
-                  </div>
-            </section>
-      
-            <section class="contact">
-                  <div class="containCont">
-                        <div class="contForm">
-                              <form class="contact_form2 calendar2" action="mailer.php" method="POST" autocomplete="off">
-                                    <h1 class="header">Your own AR Solution?</h1>
-                                    <input class="input-email2" id="userEmail" type="email" name="email" required placeholder="@">
-                                    <textarea class="input-message2" id="message" type="text" name="message" rows="10" cols="30" required placeholder="Message"></textarea>
-                                    <div>
-                                          <input type="checkbox" id="gdpr" name="gdpr" style="margin-top:18px;" required>
-                                          <label for="gdpr" class="gdpr">I agree with <a href="privacy" target="_blank">the policy</a> of AR Visual</label>
-                                    </div>
-                                    <input id="submit" type="submit" name="submit" value="Submit">
-                              </form>
-                              <div class="successAlert2">
-                                    <h1 class="header">Thanks for reaching out!</h1>
-                                    <p>Your message has been sent successfuly, we will contact you as soon as possible.</p>
-                                    <wrapper><button id="okBtn2" class="allright">Allright</button></wrapper>
-                              </div>
-                              <div class="contInfo">
-                                    <h1 class="header">Let's be social</h1>
-                                     <p class="par">If you are eagre to talk about Augmented Reality or you wish to simply follow
-                                           latest trends in the field of AR for furniture and home decor, check out our social feed
-                                           and discover what do we have in store for you.
-                                     </p>
-                                    <div class="socialMedia">
-                                          <a href="https://www.facebook.com/arvisualofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                          <a href="https://www.linkedin.com/company/arvisual/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                          <a href="https://www.youtube.com/channel/UCKDOdMfVe6p29hEckLiSYKg" target="_blank"><i class="fab fa-youtube"></i></a>
-                                          <a href="https://www.instagram.com/arvisualofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </section>
-            <section class="requestDemo">
-                  <div class="contDemo">
-                        <h1 class="header">Interested yet?<br> We got you covered!</h1>
-                        <p class="par">If you are curious about the technology or your wish to see your
-                                    products visualized in Augmented Reality, let us know!</p>
-                        <wrapper><button id="btnDemoPop" class="btnDemo">Request a demo</button></wrapper>
-                  </div>
-            </section>
-            <div id="popupMain">
-                  <div id="popupExit"><p class="exitBtn">+</p></div>
-                  <div class="popupBody">
-                        <div class="popImg"></div>
-                        <form class="contact_form calendar" action="mailer.php" method="POST" autocomplete="off">
-                              <h1 class="header">Would you like a demo?</h1>
-                              <p class="hook">Free demonstration of your products in Augmented Reality? No problem
-                                          just send us all the info, we will hook you up.
-                                    </p>
-                              <input class="input-subject" id="subject" type="text" name="subj" required placeholder="Subject">
-                              <input class="input-email" id="userEmail" type="email" name="email" required placeholder="@">
-                              <textarea class="input-message" id="message" type="text" name="message" rows="10" cols="30" required placeholder="Message"></textarea>
-                              <div>
-                                    <input type="checkbox" id="gdpr" name="gdpr" style="margin-top:18px;" required>
-                                    <label for="gdpr" class="gdpr">I agree with <a href="privacy">the policy</a> of AR Visual</label>
-                              </div>
-                              <input id="submit" type="submit" name="submit" value="Submit">
-                        </form>
-                        <div class="successAlert">
-                              <h1>Thank you for reaching out</h1>
-                              <p>Your message has been sent successfuly, we will contact you as soon as possible.</p>
-                              <p>Meanwhile, why don't you go ahead and see what's new?</p>
-                              <div class="socialMediaPopup">
-                                    <a href="https://www.facebook.com/arvisualofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.linkedin.com/company/arvisual/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCKDOdMfVe6p29hEckLiSYKg" target="_blank"><i class="fab fa-youtube"></i></a>
-                                    <a href="https://www.instagram.com/arvisualofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
-                              </div>
-                              <wrapper><button id="okBtn" class="allright">Allright</button></wrapper>
-                        </div>
-                  </div>
-            </div>
+            
             <div class="downCont section" id="scrollContact">
                   <h1 class="header">Contact us</h1>
                   <div class="downContContainer">
@@ -262,6 +177,6 @@
             </div>
             <p>&copy; 2019 AR Visual</p>
       </footer>
-      <script src="js/main.js"></script>
+      <script src="js/case.js"></script>
 </body>
 </html>

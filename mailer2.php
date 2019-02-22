@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
-$to = 'michal.zak.misch@gmail.com';
+$to       = 'info@arvisual.eu';
 $subj     = "New custom app inquiry";
 $email    = !empty($_POST['email']) ? htmlentities($_POST['email']) : "";
 $message  = !empty($_POST['message']) ? htmlentities($_POST['message']) : "";

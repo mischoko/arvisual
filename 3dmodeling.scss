@@ -15,3 +15,183 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     height: 500px;
     width: 100%;
 }
+.aboutUs{
+    .flexPar{
+    display: flex;
+    flex-direction: row;
+    .unitPar{
+        flex-basis: 50%;
+        text-align: left;
+        &:nth-of-type(1){
+            margin-right: 50px;
+        }
+        &:nth-of-type(2){
+            margin-left: 50px;
+        }
+        }
+    }
+}
+.how{
+    width: 100%;
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    .mainHeader{
+        font-size: 2em;
+        text-align: center;
+        color: $darkGray;
+        font-weight: 900;
+    }
+    .processFlex{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .processUnit{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 33.3%;
+            justify-content: center;
+            margin-top: 50px;
+            &:nth-of-type(2){
+                margin-left: 90px;
+                margin-right: 90px;
+            }
+            .under{
+                font-size: 14em;
+                color: #efefef;
+                position: absolute;
+                z-index: 1;
+                font-weight: 900;
+                margin: 0;
+                margin-top: -7px;
+                margin-left: -60px;
+            }
+            .header{
+                span{
+                    display: none;
+                }
+                color: $darkGray;
+                z-index: 2;
+                margin-bottom: 0;
+            }
+            p{
+                color: $lightGray;
+                z-index: 2;
+                margin-top: 10px;
+                line-height: 1.6em;
+            }   
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .how{
+        padding-left: $marginMob;
+        padding-right: $marginMob;
+        .processFlex{
+            .processUnit{
+                margin-top: 30px;
+                &:nth-of-type(2){
+                    margin-left: 40px;
+                    margin-right: 40px;
+                }
+                .under{
+                    margin-left: -40px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .aboutUs{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .flexPar{
+        flex-direction: column;
+        .unitPar{
+            flex-basis: 50%;
+            text-align: left;
+            &:nth-of-type(1){
+                margin-right: 0px;
+            }
+            &:nth-of-type(2){
+                margin-left: 0px;
+            }
+            }
+        }
+    }
+    .how{
+        .processFlex{
+            flex-direction: column;
+            align-items: center;
+            .processUnit{
+                margin-top: 0;
+                &:nth-of-type(2){
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .under{
+                    font-size: 8em;
+                    margin-left: -10px;
+                    padding-top: 10px;
+                }
+                .header{
+                    padding-left: 30px;
+                    margin-top: 30px;
+                }
+                p{
+                    margin-top: 5px;
+                    max-width: 500px;
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .mainImg{
+        height: 350px;
+    }
+    .aboutUs{
+        margin-bottom: 0;
+        .par{
+            margin-bottom: 0;
+        }
+    }
+    .marginVid{
+        .video{
+            margin-top: 40px;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .mainImg{
+        height: 200px;
+    }
+    .marginVid{
+        .video{
+            margin-top: 25px;
+        }
+    }
+    .downCont > .header{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .how > .processFlex > .processUnit{
+        .under{
+        display: none;
+        }
+        .header{
+            span{
+                display: inline;
+            }
+            margin-top: 5px;
+            padding-left: 0;
+            font-size: 1.2em !important;
+        }
+        p{
+            padding-left: 0;
+        }
+    }
+}

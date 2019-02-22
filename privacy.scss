@@ -1,0 +1,55 @@
+@import 'mains';
+
+$darkGray: #393939;
+$lightGray: #787878;
+$marginInit: 18%;
+$marginMob: 4%;
+$grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
+
+.privImg{
+    background: url('imgs/privacy.jpg')no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 500px;
+    width: 100%;
+}
+
+.containGdpr{
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    width: 100%;
+    margin-top: 30px;
+    h1{
+        color: $darkGray;
+        font-weight: 900;
+        margin-bottom: 0px;
+        margin-top: 40px;
+    }
+    p{
+        color: $lightGray;
+        line-height: 1.6em;
+        margin-top: 10px;
+    }
+    .pFirst{
+        margin-top: 20px;
+    }
+    ul{
+        list-style-type: square;
+        color: $lightGray;
+        line-height: 1.6em;
+    }
+}
+
+@media screen and (max-width: 964px) {
+    .containGdpr{
+        padding-left: $marginMob;
+        padding-right: $marginMob;
+    }
+}
+@media screen and (max-width: 600px) {
+    .containGdpr{
+        h1{
+            font-size: 1.2em !important;
+        }
+    }
+}
