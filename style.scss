@@ -1,0 +1,170 @@
+@import 'mains';
+
+$darkGray: #393939;
+$lightGray: #787878;
+$marginInit: 18%;
+$marginMob: 4%;
+$grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
+
+//video animation settings
+#vidOn{
+    opacity: 0;
+    transition-duration: .5s;
+}
+#tagline{
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition-duration: 1s;
+    text-align: center;
+    h1{
+        color: white;
+        font-size: 3em;
+        margin: 0;
+    }
+    p{
+        color: white;
+        font-size: 1.5em;
+    }
+}
+#subtagline{
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition-duration: 1s;
+    color: white;
+}
+//preloader element
+#elem{
+    background: transparent;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%,0);
+    svg path, svg rect{
+        fill: #ed1a6b;
+    }
+}
+
+.aboutUs{
+    .moreClients{
+        background: transparent;
+        font-size: 1em;
+        border: solid 1px $darkGray;
+        padding: 6px 24px 6px 24px;
+        border-radius: 50px;
+        color: $darkGray;
+        text-decoration: none;
+        transition-duration: .2s;
+        margin-top: 20px;
+        &:hover{
+            border-color: $lightGray;
+          cursor: pointer;
+          padding: 6px 33px 6px 33px;
+          color: $lightGray;
+        }
+    }
+}
+.showMore{
+    width: 100%;
+    text-align: center;
+    .moreStudies{
+        background: transparent;
+        font-size: 1em;
+        border: solid 1px $darkGray;
+        padding: 6px 24px 6px 24px;
+        border-radius: 50px;
+        color: $darkGray;
+        text-decoration: none;
+        transition-duration: .2s;
+        margin-top: 40px;
+        &:hover{
+            border-color: $lightGray;
+        cursor: pointer;
+        padding: 6px 33px 6px 33px;
+        color: $lightGray;
+        }
+    }
+}
+.contAr{
+    display: flex;
+    flex-direction: row;
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    height: 500px;
+    
+    justify-content: center;
+    .textAr{
+        flex-basis: 50%;;
+        align-self: center;
+        margin-right: 50px;
+        h1{
+            color: $darkGray;
+            font-size: 1.5em;
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+        p{
+            color: $lightGray;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            line-height: 1.6em;
+            margin-bottom: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: $darkGray;
+            font-weight: bolder;
+            i{
+                padding-left: 5px;
+                transition-duration: .2s;
+            }
+            &:hover{
+                color: $lightGray;
+                i{
+                    color: $lightGray;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .imgAr1{
+        flex-basis: 50%;
+        background: url('imgs/ar_app.png')no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 50px;
+        max-width: 520px;
+    }
+    .imgAr2{
+        flex-basis: 50%;
+        background: url('imgs/heymat_app.png')no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        max-width: 520px;
+    }
+    .imgAr3{
+        flex-basis: 50%;
+        background: url('imgs/ar_platform.jpg')no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: 50px;
+        max-width: 520px;
+    }
+}
+.flip{
+    flex-direction: row-reverse;
+    .textAr{
+        margin-right: 0;
+        margin-left: 50px;
+    }
+    .imgAr{
+        margin-left: 0;
+        margin-right: 50px;
+    }
+}
