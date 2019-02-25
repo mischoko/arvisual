@@ -188,6 +188,10 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
             width: 150px;
             height: 60px;
             margin-right: 10px;
+            transition-duration: .2s;
+            &:hover{
+              opacity: .6;
+            }
         }
         .android{
             background: url('imgs/google.svg')no-repeat;
@@ -196,6 +200,10 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
             width: 150px;
             height: 60px;
             margin-left: 10px;
+            transition-duration: .2s;
+            &:hover{
+              opacity: .6;
+            }
         }
     }    
 }

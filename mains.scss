@@ -616,12 +616,16 @@ footer{
   .footCont{
     display: flex;
     flex-direction: row;
-    padding-top: 5px;
+    padding-top: 10px;
     .footUnit{
-      flex-basis: 20%;
+      flex-basis: 33.3%;
+      padding-right: 4%;
+      padding-left: 4%;
       ul{
         list-style: none;
+        padding: 0;
         li{
+          line-height: 2em;
           a{
             color: white;
             text-decoration: none;
@@ -635,6 +639,12 @@ footer{
           }
         }
       }
+      &:nth-of-type(3){
+        padding-right: 0;
+      }
+      &:nth-of-type(4){
+        padding-left: 0;
+      }
     }
   }
   p{
@@ -644,6 +654,44 @@ footer{
     font-size: .85em;
     padding: 8px 0px 7px 0px;
   }
+  .dload{
+    margin-top: 10px;
+    font-size: 1em;
+    text-align: right;
+  }
+  .dloadIcons{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        justify-content: right;
+        .apple{
+            background: url('imgs/apple.svg')no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 120px;
+            height: 55px;
+            margin: 0 auto;
+            margin-top: 5px;
+            float: right;
+            transition-duration: .2s;
+            &:hover{
+              opacity: .6;
+            }
+        }
+        .android{
+            background: url('imgs/google.svg')no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 120px;
+            height: 55px;
+            margin: 0 auto;
+            float: right;
+            transition-duration: .2s;
+            &:hover{
+              opacity: .6;
+            }
+        }
+    }    
 }
 
 /////////////////////////////MEDIAQUERIES///////////////////////////////////
@@ -830,11 +878,9 @@ footer{
       }
     } 
   }
-  footer{
-    .footCont{
-      .footUnit{
-        flex-basis: 35%;
-      }
+  footer > .footCont > .footUnit{
+    &:nth-of-type(3){
+      max-width: 120px;
     }
   }
 }
@@ -859,10 +905,19 @@ footer{
   }
   footer{
     .footCont{
-      padding-left: $marginMob;
+      flex-wrap: wrap;
       .footUnit{
-        ul{
-          padding: 0;
+        flex-basis: 50%;
+        &:nth-of-type(3){
+          max-width: unset;
+        }
+        &:nth-of-type(4){
+          .dload{
+            text-align: unset;
+          }
+          .apple, .android{
+            float: left;
+          }
         }
       }
     }
@@ -1024,6 +1079,11 @@ footer{
   }
   footer{
     margin-top: 25px;
+    .footCont > .footUnit{
+      &:nth-of-type(2){
+        text-align: right;
+      }
+    }
   }
   #popupMain{
     .popupBody{
