@@ -255,9 +255,13 @@ window.onload = function(){
   //preloader element
   var elem = document.getElementById('elem');
   //calc the 
-  var doc = document.getElementById('vidOn').offsetHeight;
+  var doc = document.getElementById('wrp').offsetHeight;
   var el = document.getElementById('tagline');
-  var top = doc / 2;
+  var elmid = document.getElementById('tagline').offsetHeight;
+  var calcmid = elmid / 2;
+  var subtotal = doc / 2;
+  var fin = subtotal - calcmid;
+  var top =  fin;
   vid.addEventListener('play', function(e){
         setTimeout(() => {
               elem.style.display = "none";
@@ -266,8 +270,6 @@ window.onload = function(){
         //position of tagline in the video
         setTimeout(()=>{
           el.style.opacity = "1";
-          el.style.top = top - 50 + "px";
-          el.style.transform = "translateY(-"+top+")";
-        }, 1000);
+        }, 1500);
   });
 }

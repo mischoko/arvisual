@@ -7,36 +7,55 @@ $marginMob: 4%;
 $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
 
 //video animation settings
-#vidOn{
-    opacity: 0;
-    transition-duration: .5s;
-}
-#tagline{
-    position: absolute;
-    left: 50%;
-    margin: 0;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition-duration: 1s;
-    text-align: center;
-    h1{
-        color: white;
-        font-size: 3em;
+.wrapVid{
+    display: flex;
+    max-height: 1080px;
+    overflow: hidden;
+    justify-content: center;
+    #vidOn{
+        opacity: 0;
+        transition-duration: .5s;
+    }
+    #tagline{
+        position: absolute;
+        left: 50%;
         margin: 0;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition-duration: 1s;
+        text-align: center;
+        top: 410px;
+        h1{
+            color: white;
+            font-size: 3em;
+            margin: 0;
+            text-shadow: rgba($color: #000000, $alpha: .2) 3px 3px 2px;
+        }
+        p{
+            color: white;
+            font-size: 1.2em;
+            line-height: 1.6em;
+            text-shadow: rgba($color: #000000, $alpha: .2) 3px 3px 2px;
+        }
+        button{
+            background: white;
+            box-shadow: rgba($color: #000000, $alpha: .2) 3px 3px 2px;
+            border: none;
+            font-size: 1em;
+            padding: 6px 24px 6px 24px;
+            border-radius: 50px;
+            margin-top: 5px;
+        }
     }
-    p{
+    #subtagline{
+        position: absolute;
+        left: 50%;
+        margin: 0;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition-duration: 1s;
         color: white;
-        font-size: 1.5em;
     }
-}
-#subtagline{
-    position: absolute;
-    left: 50%;
-    margin: 0;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition-duration: 1s;
-    color: white;
 }
 //preloader element
 #elem{
@@ -166,5 +185,68 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     .imgAr{
         margin-left: 0;
         margin-right: 50px;
+    }
+}
+/////////////////////////////MEDIAQUERIES///////////////////////////////////
+/////////////////////////////MEDIAQUERIES///////////////////////////////////
+/////////////////////////////MEDIAQUERIES///////////////////////////////////
+@media screen and (max-width: 1600px) {
+    .wrapVid{
+        #tagline{
+            top: 320px;
+        }
+    }
+}
+@media screen and (max-width: 1400px) {
+    .wrapVid{
+        max-height: 520px;
+        #tagline{
+            top: 200px;
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .wrapVid{
+        max-height: 320px;
+        #vidOn{
+            margin-top: -35px;
+        }
+        #tagline{
+            top: 120px;
+            h1{
+                font-size: 2.2em;
+            }
+            p{
+                font-size: 1em;
+                margin-top: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 770px) {
+    .wrapVid{
+        #vidOn{
+            margin-top: 0px;
+        }
+        #tagline{
+            width: 100%;
+            max-width: 400px;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .wrapVid{
+        max-height: 320px;
+        #tagline{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .wrapVid{
+        max-height: 180px;
+        #vidOn{
+            width: 380px;
+        }
     }
 }
