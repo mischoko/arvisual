@@ -105,9 +105,9 @@ function fun() {
     })
   } else if (checkbox.checked == false){
     bug.classList.add('hidden');
-    i0.style.background = "white";
-    i1.style.background = "white";
-    i2.style.background = "white";
+    i0.style.background = "#393939";
+    i1.style.background = "#393939";
+    i2.style.background = "#393939";
   }
 };
 document.onclick = function(){
@@ -260,20 +260,10 @@ var total = subTotal / 2 - 10;
 var exitbtn = document.getElementById('popupExit');
 exitbtn.style.right = total + "px";
 }
-//preloader and video delay function
+//reveal tagline
 window.onload = function(){
-  var vid = document.getElementById("vidOn");
-  //preloader element
-  var elem = document.getElementById('elem');
-  var el = document.getElementById('tagline');
-  vid.addEventListener('play', function(e){
-        setTimeout(() => {
-              elem.style.display = "none";
-              vid.style.opacity = "1";                        
-        }, 500);
-        //position of tagline in the video
-        setTimeout(()=>{
-          el.style.opacity = "1";
-        }, 1500);
-  });
+  var elem = document.getElementById('tagline');
+  setTimeout(() => {
+        elem.style.opacity = "1";
+  }, 200);
 }

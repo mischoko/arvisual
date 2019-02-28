@@ -13,7 +13,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     overflow: hidden;
     justify-content: center;
     #vidOn{
-        opacity: 0;
+        opacity: 1;
         transition-duration: .5s;
     }
     #tagline{
@@ -64,18 +64,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         color: white;
     }
 }
-//preloader element
-#elem{
-    background: transparent;
-    position: absolute;
-    top: 450px;
-    left: 50%;
-    transform: translate(-50%,0);
-    svg path, svg rect{
-        fill: #ed1a6b;
-    }
-}
-
+//clients logos
 .aboutUs{
     .moreClients{
         background: transparent;
@@ -95,6 +84,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         }
     }
 }
+//more btn
 .showMore{
     width: 100%;
     text-align: center;
@@ -121,13 +111,12 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     flex-direction: row;
     padding-left: $marginInit;
     padding-right: $marginInit;
-    height: 500px;
-    
+    height: 700px;
     justify-content: center;
     .textAr{
         flex-basis: 50%;;
         align-self: center;
-        margin-right: 50px;
+        margin-right: 25px;
         h1{
             color: $darkGray;
             font-size: 1.5em;
@@ -140,6 +129,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
             margin-bottom: 30px;
             line-height: 1.6em;
             margin-bottom: 15px;
+            max-width: 600px;
         }
         a{
             text-decoration: none;
@@ -160,38 +150,38 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     }
     .imgAr1{
         flex-basis: 50%;
-        background: url('imgs/ar_app.png')no-repeat;
+        background: url('imgs/ar_app.jpg')no-repeat;
         background-position: center;
         background-size: cover;
-        margin-left: 50px;
-        max-width: 520px;
+        margin-left: 25px;
+        min-width: 470px;
     }
     .imgAr2{
         flex-basis: 50%;
         background: url('imgs/heymat_app.png')no-repeat;
         background-position: center;
         background-size: cover;
-        
-        max-width: 520px;
+        min-width: 470px;
+        margin-right: 25px;
     }
     .imgAr3{
         flex-basis: 50%;
         background: url('imgs/ar_platform.jpg')no-repeat;
         background-position: center;
         background-size: cover;
-        margin-left: 50px;
-        max-width: 520px;
+        margin-left: 25px;
+        min-width: 470px;
     }
 }
 .flip{
     flex-direction: row-reverse;
     .textAr{
         margin-right: 0;
-        margin-left: 50px;
+        margin-left: 25px;
     }
     .imgAr{
         margin-left: 0;
-        margin-right: 50px;
+        margin-right: 25px;
     }
 }
 .howHead{
@@ -203,10 +193,11 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         margin-bottom: 0;
     }
 }
+//process
 .how{
     width: 100%;
-    padding-left: $marginInit;
-    padding-right: $marginInit;
+    padding-left: $marginMob;
+    padding-right: $marginMob;
     .processFlex{
         display: flex;
         flex-direction: row;
@@ -218,10 +209,11 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
             justify-content: center;
             margin-top: 30px;
             &:nth-of-type(2){
-                margin-left: 90px;
-                margin-right: 90px;
+                margin-left: 40px;
+                margin-right: 40px;
             }
             .under{
+                display: none;
                 font-size: 14em;
                 color: #efefef;
                 position: absolute;
@@ -258,7 +250,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     margin-bottom: 40px;
     justify-content: center;
     .vidUnit{
-        flex-basis: 33.3%;
+        flex-basis: 50%;
         text-align: center;
         &:nth-of-type(1){
             margin-right: 20px;
@@ -325,7 +317,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     margin-top: 45px;
     margin-bottom: 40px;
     .blogUnit{
-        flex-basis: 33.3%;
+        flex-basis: 50%;
         &:nth-of-type(1){
             margin-right: 20px;
         }
@@ -378,9 +370,6 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
             top: 320px;
         }
     }
-    #elem{
-        top: 330px;
-    }
 }
 @media screen and (max-width: 1400px) {
     .wrapVid{
@@ -388,9 +377,6 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         #tagline{
             top: 200px;
         }
-    }
-    #elem{
-        top: 220px;
     }
     .blogCont, .vidGal{
         padding-left: $marginMob;
@@ -408,8 +394,8 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         .processFlex{
             .processUnit{
                 &:nth-of-type(2){
-                    margin-left: 40px;
-                    margin-right: 40px;
+                    margin-left: 20px;
+                    margin-right: 20px;
                 }
                 .under{
                     margin-left: -40px;
@@ -435,9 +421,6 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
             }
         }
     }
-    #elem{
-        top: 150px;
-    }
     .mainHeader{
         margin-top: 0;
     }
@@ -447,7 +430,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
 }
 @media screen and (max-width: 860px) {
     .contAr{
-        height: 380px;
+        height: 500px;
         .textAr{
             h1{
                 font-size: 1.15em !important;
@@ -459,6 +442,9 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         }
         .imgAr2{
             margin-right: 25px;
+        }
+        .imgAr, .imgar1, .imgAr2, .imgAr3{
+            min-width: 360px;;
         }
     }
     .how{
@@ -486,6 +472,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     .vidGal{
         flex-direction: column;
         margin-top: 15px;
+        margin-bottom: 0;
         .vidUnit{
             margin-left: 0 !important;
             margin-right: 0 !important;
@@ -501,6 +488,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     .blogCont{
         flex-direction: column;
         margin-top: 15px;
+        margin-bottom: 0;
         .blogUnit{
             margin-left: 0 !important;
             margin-right: 0 !important;
@@ -550,6 +538,20 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
         #tagline{
             width: 100%;
             max-width: 400px;
+        }
+    }
+    .contAr{
+        flex-direction: column;
+        height: 670px;
+        .textAr{
+            flex-basis: 30%;
+            margin-top: 30px;
+        }
+        .imgAr1, .imgAr2, .imgAr3{
+            flex-basis: 70%;
+            max-width: 500px;
+            justify-self: center;
+            margin: 0 auto;
         }
     }
 }
@@ -605,13 +607,15 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     }
     .contAr{
         flex-direction: column;
-        height: 630px;
+        height: 720px;
         .textAr{
         }
         .imgAr1, .imgAr2, .imgAr3{
             flex-basis: 70%;
             margin-top: 2%;
             margin-bottom: 2%;
+            min-width: unset;
+            margin: unset;
         }
     }
     .flip{
@@ -621,6 +625,9 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
 @media screen and (max-width: 450px) {
     #elem{
         top: 100px;
+    }
+    .contAr{
+        height: 640px;
     }
 }
 @media screen and (max-width: 400px) {

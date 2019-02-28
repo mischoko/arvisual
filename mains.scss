@@ -205,12 +205,6 @@
             }
         }
     }
-    .labzoneCsPhone{
-        position: absolute;
-        top: 700px;
-        width: 400px;
-        right: $marginInit;
-    }
 }
 //contact social media
 .contact{
@@ -570,7 +564,10 @@
   .downContContainer{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     .sales, .management, .marketing{
+      flex-basis: 33.3% !important;
+      text-align: center;
       strong{
         color: $darkGray;
         font-size: 1.2em;
@@ -595,21 +592,14 @@
         }
       }
     }
-    .address{
-      flex-basis: 20%;
-      color: $lightGray;
-      display: flex;
-      flex-direction: column;
-      strong{
-        color: $darkGray;
-        font-size: 1.2em;
-        line-height: 2em;
-      }
+    .management{
+      margin-left: 50px;
+      margin-right: 50px;
     }
     .wrapOne{
       display: flex;
       flex-direction: row;
-      flex-basis: 90%;
+      
     }
   }
 }
@@ -647,11 +637,17 @@ footer{
           }
         }
       }
-      &:nth-of-type(3){
-        padding-right: 0;
-      }
       &:nth-of-type(4){
         padding-left: 0;
+      }
+    }
+    .add{
+      margin-top: 10px;
+      p{
+        text-align: left;
+        margin-top: 5px;
+        line-height: 1.6em;
+
       }
     }
   }
@@ -859,20 +855,12 @@ footer{
             display: none;
           }
         }
-        .address{
-          display: flex;
-          flex-direction: row;
-          div{
-            flex-basis: 33%;
-            margin-top: 30px;
-          }
-        }
     } 
   }
   .socialMedia2{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 20px;
     justify-content: center;
     i{
       color: $darkGray;
@@ -884,11 +872,6 @@ footer{
         cursor: pointer;
       }
     } 
-  }
-  footer > .footCont > .footUnit{
-    &:nth-of-type(3){
-      max-width: 120px;
-    }
   }
 }
 
@@ -904,6 +887,9 @@ footer{
         form{
           padding-right: 0;
         }
+        .contInfo{
+          display: none;
+        }
       }
     }
   }
@@ -918,9 +904,11 @@ footer{
         &:nth-of-type(3){
           max-width: unset;
         }
-        &:nth-of-type(4){
+        &:nth-of-type(3){
           .dload{
             text-align: unset;
+            flex-basis: 100%;
+            width: 150px;
           }
           .apple, .android{
             float: left;
@@ -985,15 +973,9 @@ footer{
       flex-direction: row;
       .wrapOne{
         flex-direction: column;
-        flex-basis: 50%;
+        flex-basis: 100%;
         align-items: center;
         text-align: center;
-      }
-      .address{
-        flex-direction: column;
-        flex-basis: 50%;
-        align-items: center;
-        justify-items: left;
       }
     }
   }
@@ -1073,11 +1055,6 @@ footer{
       flex-direction: column;
       p{
         margin-top: 0;
-      }
-      .address{
-        div{
-          margin-top: 10px;
-        }
       }
     }
   }

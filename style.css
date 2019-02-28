@@ -232,13 +232,6 @@ nav ul li a:hover {
   padding-right: 5px;
 }
 
-.caseStudy .labzoneCsPhone {
-  position: absolute;
-  top: 700px;
-  width: 400px;
-  right: 18%;
-}
-
 .contact .containCont {
   margin-top: 50px;
   margin-left: 18%;
@@ -697,9 +690,15 @@ nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .downCont .downContContainer .sales, .downCont .downContContainer .management, .downCont .downContContainer .marketing {
+  -ms-flex-preferred-size: 33.3% !important;
+      flex-basis: 33.3% !important;
+  text-align: center;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
   color: #787878;
@@ -736,23 +735,9 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-.downCont .downContContainer .address {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
-  color: #787878;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.downCont .downContContainer .address strong {
-  color: #393939;
-  font-size: 1.2em;
-  line-height: 2em;
+.downCont .downContContainer .management {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .downCont .downContContainer .wrapOne {
@@ -763,8 +748,6 @@ nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
 }
 
 .socialMedia2 {
@@ -818,12 +801,18 @@ footer .footCont .footUnit ul li a:hover {
   color: #787878;
 }
 
-footer .footCont .footUnit:nth-of-type(3) {
-  padding-right: 0;
-}
-
 footer .footCont .footUnit:nth-of-type(4) {
   padding-left: 0;
+}
+
+footer .footCont .add {
+  margin-top: 10px;
+}
+
+footer .footCont .add p {
+  text-align: left;
+  margin-top: 5px;
+  line-height: 1.6em;
 }
 
 footer p {
@@ -1047,20 +1036,6 @@ footer .dloadIcons .android:hover {
   .downCont .downContContainer .sales .socialMedia, .downCont .downContContainer .management .socialMedia, .downCont .downContContainer .marketing .socialMedia {
     display: none;
   }
-  .downCont .downContContainer .address {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .downCont .downContContainer .address div {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%;
-    margin-top: 30px;
-  }
   .socialMedia2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1069,7 +1044,7 @@ footer .dloadIcons .android:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 50px;
+    margin-top: 20px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1084,9 +1059,6 @@ footer .dloadIcons .android:hover {
   .socialMedia2 i:hover {
     color: #787878;
     cursor: pointer;
-  }
-  footer > .footCont > .footUnit:nth-of-type(3) {
-    max-width: 120px;
   }
 }
 
@@ -1106,6 +1078,9 @@ footer .dloadIcons .android:hover {
   .contact .containCont .contForm form {
     padding-right: 0;
   }
+  .contact .containCont .contForm .contInfo {
+    display: none;
+  }
   .downCont {
     margin-top: 0px;
   }
@@ -1120,10 +1095,13 @@ footer .dloadIcons .android:hover {
   footer .footCont .footUnit:nth-of-type(3) {
     max-width: unset;
   }
-  footer .footCont .footUnit:nth-of-type(4) .dload {
+  footer .footCont .footUnit:nth-of-type(3) .dload {
     text-align: unset;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    width: 150px;
   }
-  footer .footCont .footUnit:nth-of-type(4) .apple, footer .footCont .footUnit:nth-of-type(4) .android {
+  footer .footCont .footUnit:nth-of-type(3) .apple, footer .footCont .footUnit:nth-of-type(3) .android {
     float: left;
   }
 }
@@ -1174,24 +1152,12 @@ footer .dloadIcons .android:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-  }
-  .downCont .downContContainer .address {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: left;
   }
   #popupMain .popupBody .popImg {
     height: 120px;
@@ -1258,9 +1224,6 @@ footer .dloadIcons .android:hover {
   .downCont .downContContainer p {
     margin-top: 0;
   }
-  .downCont .downContContainer .address div {
-    margin-top: 10px;
-  }
   .socialMedia2 {
     margin-top: 30px;
   }
@@ -1294,7 +1257,7 @@ footer .dloadIcons .android:hover {
 }
 
 .wrapVid #vidOn {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition-duration: .5s;
           transition-duration: .5s;
 }
@@ -1361,19 +1324,6 @@ footer .dloadIcons .android:hover {
   color: white;
 }
 
-#elem {
-  background: transparent;
-  position: absolute;
-  top: 450px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-#elem svg path, #elem svg rect {
-  fill: #ed1a6b;
-}
-
 .aboutUs .moreClients {
   background: transparent;
   font-size: 1em;
@@ -1429,7 +1379,7 @@ footer .dloadIcons .android:hover {
           flex-direction: row;
   padding-left: 18%;
   padding-right: 18%;
-  height: 500px;
+  height: 700px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1441,7 +1391,7 @@ footer .dloadIcons .android:hover {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-right: 50px;
+  margin-right: 25px;
 }
 
 .contAr .textAr h1 {
@@ -1457,6 +1407,7 @@ footer .dloadIcons .android:hover {
   margin-bottom: 30px;
   line-height: 1.6em;
   margin-bottom: 15px;
+  max-width: 600px;
 }
 
 .contAr .textAr a {
@@ -1483,11 +1434,11 @@ footer .dloadIcons .android:hover {
 .contAr .imgAr1 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  background: url("imgs/ar_app.png") no-repeat;
+  background: url("imgs/ar_app.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  margin-left: 50px;
-  max-width: 520px;
+  margin-left: 25px;
+  min-width: 470px;
 }
 
 .contAr .imgAr2 {
@@ -1496,7 +1447,8 @@ footer .dloadIcons .android:hover {
   background: url("imgs/heymat_app.png") no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 520px;
+  min-width: 470px;
+  margin-right: 25px;
 }
 
 .contAr .imgAr3 {
@@ -1505,8 +1457,8 @@ footer .dloadIcons .android:hover {
   background: url("imgs/ar_platform.jpg") no-repeat;
   background-position: center;
   background-size: cover;
-  margin-left: 50px;
-  max-width: 520px;
+  margin-left: 25px;
+  min-width: 470px;
 }
 
 .flip {
@@ -1518,12 +1470,12 @@ footer .dloadIcons .android:hover {
 
 .flip .textAr {
   margin-right: 0;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .flip .imgAr {
   margin-left: 0;
-  margin-right: 50px;
+  margin-right: 25px;
 }
 
 .howHead {
@@ -1539,8 +1491,8 @@ footer .dloadIcons .android:hover {
 
 .how {
   width: 100%;
-  padding-left: 18%;
-  padding-right: 18%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .how .processFlex {
@@ -1571,11 +1523,12 @@ footer .dloadIcons .android:hover {
 }
 
 .how .processFlex .processUnit:nth-of-type(2) {
-  margin-left: 90px;
-  margin-right: 90px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .how .processFlex .processUnit .under {
+  display: none;
   font-size: 14em;
   color: #efefef;
   position: absolute;
@@ -1621,8 +1574,8 @@ footer .dloadIcons .android:hover {
 }
 
 .vidGal .vidUnit {
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   text-align: center;
 }
 
@@ -1706,8 +1659,8 @@ footer .dloadIcons .android:hover {
 }
 
 .blogCont .blogUnit {
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .blogCont .blogUnit:nth-of-type(1) {
@@ -1762,9 +1715,6 @@ footer .dloadIcons .android:hover {
   .wrapVid #tagline {
     top: 320px;
   }
-  #elem {
-    top: 330px;
-  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1773,9 +1723,6 @@ footer .dloadIcons .android:hover {
   }
   .wrapVid #tagline {
     top: 200px;
-  }
-  #elem {
-    top: 220px;
   }
   .blogCont, .vidGal {
     padding-left: 4%;
@@ -1793,8 +1740,8 @@ footer .dloadIcons .android:hover {
     padding-right: 4%;
   }
   .how .processFlex .processUnit:nth-of-type(2) {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .how .processFlex .processUnit .under {
     margin-left: -40px;
@@ -1818,9 +1765,6 @@ footer .dloadIcons .android:hover {
     font-size: 1em;
     margin-top: 0;
   }
-  #elem {
-    top: 150px;
-  }
   .mainHeader {
     margin-top: 0;
   }
@@ -1831,7 +1775,7 @@ footer .dloadIcons .android:hover {
 
 @media screen and (max-width: 860px) {
   .contAr {
-    height: 380px;
+    height: 500px;
   }
   .contAr .textAr h1 {
     font-size: 1.15em !important;
@@ -1842,6 +1786,9 @@ footer .dloadIcons .android:hover {
   }
   .contAr .imgAr2 {
     margin-right: 25px;
+  }
+  .contAr .imgAr, .contAr .imgar1, .contAr .imgAr2, .contAr .imgAr3 {
+    min-width: 360px;
   }
   .how .processFlex {
     -webkit-box-orient: vertical;
@@ -1874,6 +1821,7 @@ footer .dloadIcons .android:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 15px;
+    margin-bottom: 0;
   }
   .vidGal .vidUnit {
     margin-left: 0 !important;
@@ -1892,6 +1840,7 @@ footer .dloadIcons .android:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 15px;
+    margin-bottom: 0;
   }
   .blogCont .blogUnit {
     margin-left: 0 !important;
@@ -1927,6 +1876,26 @@ footer .dloadIcons .android:hover {
   .wrapVid #tagline {
     width: 100%;
     max-width: 400px;
+  }
+  .contAr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 670px;
+  }
+  .contAr .textAr {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-top: 30px;
+  }
+  .contAr .imgAr1, .contAr .imgAr2, .contAr .imgAr3 {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    max-width: 500px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0 auto;
   }
 }
 
@@ -1985,13 +1954,15 @@ footer .dloadIcons .android:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 630px;
+    height: 720px;
   }
   .contAr .imgAr1, .contAr .imgAr2, .contAr .imgAr3 {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     margin-top: 2%;
     margin-bottom: 2%;
+    min-width: unset;
+    margin: unset;
   }
   .flip {
     margin-top: 2%;
@@ -2001,6 +1972,9 @@ footer .dloadIcons .android:hover {
 @media screen and (max-width: 450px) {
   #elem {
     top: 100px;
+  }
+  .contAr {
+    height: 640px;
   }
 }
 

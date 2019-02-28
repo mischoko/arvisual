@@ -1,0 +1,18 @@
+@import 'mains';
+@import 'style';
+
+$darkGray: #393939;
+$lightGray: #787878;
+$marginInit: 18%;
+$marginMob: 4%;
+$grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
+
+.imgUp{
+    background: url('imgs/solve.jpg')no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+.contAr{
+    margin-top: 50px;
+}

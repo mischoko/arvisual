@@ -94,9 +94,9 @@ function fun() {
     })
   } else if (checkbox.checked == false){
     bug.classList.add('hidden');
-    i0.style.background = "white";
-    i1.style.background = "white";
-    i2.style.background = "white";
+    i0.style.background = "#393939";
+    i1.style.background = "#393939";
+    i2.style.background = "#393939";
   }
 };
 document.onclick = function(){
