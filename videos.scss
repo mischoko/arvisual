@@ -1,0 +1,112 @@
+@import 'mains';
+@import 'style';
+
+$darkGray: #393939;
+$lightGray: #787878;
+$marginInit: 18%;
+$marginMob: 4%;
+$grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
+
+.unitCont{
+    padding-top: 100px;
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    display: flex;
+    flex-direction: column;
+    wrapper{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        .unit{
+            flex-basis: 50%;
+            justify-content: center;
+            &:nth-of-type(1){
+                margin-right: 50px;
+            }
+            &:nth-of-type(2){
+                margin-left: 50px;
+            }
+            .video{
+                position: relative;
+                padding-bottom: 56.25%; /* 16:9 */
+                padding-top: 25px;
+                height: 0;
+                iframe{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h1{
+                color: $darkGray;
+                margin-bottom: 5px;
+            }
+            p{
+                color: $lightGray;
+                line-height: 1.6em;
+                margin-top: 0;
+            }
+        }
+    }
+}
+#mobileMenu > #menu > li > a{
+    color: $darkGray;
+}
+.nav-btn > i{
+    background: #393939;
+}
+.requestDemo{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .unitCont{
+        padding-top: 100px;
+        padding-left: $marginMob;
+        padding-right: $marginMob;
+        wrapper{
+            .unit{
+                h1{
+                    font-size: 1.4em !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .unitCont{
+        padding-top: 80px;
+        wrapper{
+            .unit{
+                &:nth-of-type(1){
+                    margin-right: 3%;
+                }
+                &:nth-of-type(2){
+                    margin-left: 3%;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .unitCont{
+        wrapper{
+            flex-direction: column;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+            .unit{
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .requestDemo > .contDemo > .header{
+        margin-top: 0;
+    }
+}

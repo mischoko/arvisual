@@ -11,7 +11,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
 .mainImg{
     background: url('imgs/3d_modeling.jpg')no-repeat;
     background-size: cover;
-    background-position: left;
+    background-position: center;
     height: 500px;
     width: 100%;
 }
@@ -166,7 +166,7 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
 }
 @media screen and (max-width: 550px) {
     .mainImg{
-        height: 200px;
+        height: 250px;
     }
     .marginVid{
         .video{
@@ -178,6 +178,12 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
     }
 }
 @media screen and (max-width: 460px) {
+    .mainImg{
+        background: url('imgs/3d_modeling_m.jpg')no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 210px;
+    }
     .how > .processFlex > .processUnit{
         .under{
         display: none;

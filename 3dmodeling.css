@@ -573,6 +573,17 @@ nav ul li a:hover {
   color: #787878;
 }
 
+#popupMain .popupBody form label a {
+  text-decoration: underline;
+  color: #787878;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+#popupMain .popupBody form label a:hover {
+  color: #aaa;
+}
+
 #popupMain .popupBody form #submit {
   width: 150px;
   text-align: center;
@@ -774,16 +785,23 @@ footer .footCont {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 footer .footCont .footUnit {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 
 footer .footCont .footUnit ul {
   list-style: none;
+  padding: 0;
+}
+
+footer .footCont .footUnit ul li {
+  line-height: 2em;
 }
 
 footer .footCont .footUnit ul li a {
@@ -800,12 +818,73 @@ footer .footCont .footUnit ul li a:hover {
   color: #787878;
 }
 
+footer .footCont .footUnit:nth-of-type(3) {
+  padding-right: 0;
+}
+
+footer .footCont .footUnit:nth-of-type(4) {
+  padding-left: 0;
+}
+
 footer p {
   text-align: center;
   margin: 0;
   color: white;
   font-size: .85em;
   padding: 8px 0px 7px 0px;
+}
+
+footer .dload {
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: right;
+}
+
+footer .dloadIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 30px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+footer .dloadIcons .apple {
+  background: url("imgs/apple.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 120px;
+  height: 55px;
+  margin: 0 auto;
+  margin-top: 5px;
+  float: right;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+footer .dloadIcons .apple:hover {
+  opacity: .6;
+}
+
+footer .dloadIcons .android {
+  background: url("imgs/google.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 120px;
+  height: 55px;
+  margin: 0 auto;
+  float: right;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+footer .dloadIcons .android:hover {
+  opacity: .6;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1006,9 +1085,8 @@ footer p {
     color: #787878;
     cursor: pointer;
   }
-  footer .footCont .footUnit {
-    -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
+  footer > .footCont > .footUnit:nth-of-type(3) {
+    max-width: 120px;
   }
 }
 
@@ -1032,10 +1110,21 @@ footer p {
     margin-top: 0px;
   }
   footer .footCont {
-    padding-left: 4%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  footer .footCont .footUnit ul {
-    padding: 0;
+  footer .footCont .footUnit {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  footer .footCont .footUnit:nth-of-type(3) {
+    max-width: unset;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .dload {
+    text-align: unset;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .apple, footer .footCont .footUnit:nth-of-type(4) .android {
+    float: left;
   }
 }
 
@@ -1175,9 +1264,6 @@ footer p {
   .socialMedia2 {
     margin-top: 30px;
   }
-  footer {
-    margin-top: 25px;
-  }
   #popupMain .popupBody .popImg {
     display: none;
   }
@@ -1186,6 +1272,13 @@ footer p {
   }
   footer .footCont .footUnit:nth-of-type(2) {
     padding-left: 15px;
+    text-align: right;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .dload {
+    text-align: right;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .dloadIcons {
+    float: right;
   }
 }
 
@@ -1764,6 +1857,17 @@ nav ul li a:hover {
   color: #787878;
 }
 
+#popupMain .popupBody form label a {
+  text-decoration: underline;
+  color: #787878;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+#popupMain .popupBody form label a:hover {
+  color: #aaa;
+}
+
 #popupMain .popupBody form #submit {
   width: 150px;
   text-align: center;
@@ -1965,16 +2069,23 @@ footer .footCont {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 footer .footCont .footUnit {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  padding-right: 4%;
+  padding-left: 4%;
 }
 
 footer .footCont .footUnit ul {
   list-style: none;
+  padding: 0;
+}
+
+footer .footCont .footUnit ul li {
+  line-height: 2em;
 }
 
 footer .footCont .footUnit ul li a {
@@ -1991,12 +2102,73 @@ footer .footCont .footUnit ul li a:hover {
   color: #787878;
 }
 
+footer .footCont .footUnit:nth-of-type(3) {
+  padding-right: 0;
+}
+
+footer .footCont .footUnit:nth-of-type(4) {
+  padding-left: 0;
+}
+
 footer p {
   text-align: center;
   margin: 0;
   color: white;
   font-size: .85em;
   padding: 8px 0px 7px 0px;
+}
+
+footer .dload {
+  margin-top: 10px;
+  font-size: 1em;
+  text-align: right;
+}
+
+footer .dloadIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 30px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+footer .dloadIcons .apple {
+  background: url("imgs/apple.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 120px;
+  height: 55px;
+  margin: 0 auto;
+  margin-top: 5px;
+  float: right;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+footer .dloadIcons .apple:hover {
+  opacity: .6;
+}
+
+footer .dloadIcons .android {
+  background: url("imgs/google.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 120px;
+  height: 55px;
+  margin: 0 auto;
+  float: right;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+footer .dloadIcons .android:hover {
+  opacity: .6;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2197,9 +2369,8 @@ footer p {
     color: #787878;
     cursor: pointer;
   }
-  footer .footCont .footUnit {
-    -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
+  footer > .footCont > .footUnit:nth-of-type(3) {
+    max-width: 120px;
   }
 }
 
@@ -2223,10 +2394,21 @@ footer p {
     margin-top: 0px;
   }
   footer .footCont {
-    padding-left: 4%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  footer .footCont .footUnit ul {
-    padding: 0;
+  footer .footCont .footUnit {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  footer .footCont .footUnit:nth-of-type(3) {
+    max-width: unset;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .dload {
+    text-align: unset;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .apple, footer .footCont .footUnit:nth-of-type(4) .android {
+    float: left;
   }
 }
 
@@ -2366,9 +2548,6 @@ footer p {
   .socialMedia2 {
     margin-top: 30px;
   }
-  footer {
-    margin-top: 25px;
-  }
   #popupMain .popupBody .popImg {
     display: none;
   }
@@ -2377,6 +2556,13 @@ footer p {
   }
   footer .footCont .footUnit:nth-of-type(2) {
     padding-left: 15px;
+    text-align: right;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .dload {
+    text-align: right;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .dloadIcons {
+    float: right;
   }
 }
 
@@ -2645,6 +2831,12 @@ footer p {
   width: 150px;
   height: 60px;
   margin-right: 10px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.download .dloadIcons .apple:hover {
+  opacity: .6;
 }
 
 .download .dloadIcons .android {
@@ -2654,6 +2846,12 @@ footer p {
   width: 150px;
   height: 60px;
   margin-left: 10px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.download .dloadIcons .android:hover {
+  opacity: .6;
 }
 
 .requestDemo {
@@ -2919,7 +3117,7 @@ footer p {
 .mainImg {
   background: url("imgs/3d_modeling.jpg") no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center;
   height: 500px;
   width: 100%;
 }
@@ -3111,7 +3309,7 @@ footer p {
 
 @media screen and (max-width: 550px) {
   .mainImg {
-    height: 200px;
+    height: 250px;
   }
   .marginVid .video {
     margin-top: 25px;
@@ -3122,6 +3320,12 @@ footer p {
 }
 
 @media screen and (max-width: 460px) {
+  .mainImg {
+    background: url("imgs/3d_modeling_m.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 210px;
+  }
   .how > .processFlex > .processUnit .under {
     display: none;
   }

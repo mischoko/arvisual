@@ -573,6 +573,17 @@ nav ul li a:hover {
   color: #787878;
 }
 
+#popupMain .popupBody form label a {
+  text-decoration: underline;
+  color: #787878;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+#popupMain .popupBody form label a:hover {
+  color: #aaa;
+}
+
 #popupMain .popupBody form #submit {
   width: 150px;
   text-align: center;
@@ -1253,12 +1264,6 @@ footer .dloadIcons .android:hover {
   .socialMedia2 {
     margin-top: 30px;
   }
-  footer {
-    margin-top: 25px;
-  }
-  footer .footCont > .footUnit:nth-of-type(2) {
-    text-align: right;
-  }
   #popupMain .popupBody .popImg {
     display: none;
   }
@@ -1267,6 +1272,13 @@ footer .dloadIcons .android:hover {
   }
   footer .footCont .footUnit:nth-of-type(2) {
     padding-left: 15px;
+    text-align: right;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .dload {
+    text-align: right;
+  }
+  footer .footCont .footUnit:nth-of-type(4) .dloadIcons {
+    float: right;
   }
 }
 /*# sourceMappingURL=mains.css.map */

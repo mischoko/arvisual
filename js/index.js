@@ -65,7 +65,7 @@ window.onscroll = function() {
             logoColor7.style.fill = "white";
     }
 }
-//scrolling function
+//contBtn scroll fucntion onclick
  document.querySelector('.menuContBtn').addEventListener("click", function(event) {
     event.preventDefault();
     var offset = 0, y = 0, dy, call = setInterval(function(){
@@ -76,7 +76,18 @@ window.onscroll = function() {
     offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
 		y = document.documentElement.scrollTop;
 });
-//onclick function for hamburge menu
+//ctaBtn scroll function onclick
+document.getElementById('ctaBtn').addEventListener('click', function(){
+  event.preventDefault();
+    var offset = 0, y = 0, dy, call = setInterval(function(){
+    	if( Math.abs(dy=offset-y)>1 ) y += dy;
+      else { clearInterval(call); y = offset; }
+      document.documentElement.scrollTop = y - 70;
+    },10);
+    offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
+		y = document.documentElement.scrollTop;
+});
+//onclick function for hamburger menu
 function fun() {
   var i0 = document.getElementsByClassName('ipart')[0];
   var i1 = document.getElementsByClassName('ipart')[1];
@@ -254,14 +265,7 @@ window.onload = function(){
   var vid = document.getElementById("vidOn");
   //preloader element
   var elem = document.getElementById('elem');
-  //calc the 
-  var doc = document.getElementById('wrp').offsetHeight;
   var el = document.getElementById('tagline');
-  var elmid = document.getElementById('tagline').offsetHeight;
-  var calcmid = elmid / 2;
-  var subtotal = doc / 2;
-  var fin = subtotal - calcmid;
-  var top =  fin;
   vid.addEventListener('play', function(e){
         setTimeout(() => {
               elem.style.display = "none";

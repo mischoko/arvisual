@@ -472,6 +472,14 @@
       }
       label{
           color: $lightGray;
+          a{
+            text-decoration: underline;
+            color: $lightGray;
+            transition-duration: .2s;
+            &:hover{
+              color: #aaa;
+            }
+          }
       }
       #submit{
           width: 150px;
@@ -1076,14 +1084,6 @@ footer{
   .socialMedia2{
     margin-top: 30px;
   }
-  footer{
-    margin-top: 25px;
-    .footCont > .footUnit{
-      &:nth-of-type(2){
-        text-align: right;
-      }
-    }
-  }
   #popupMain{
     .popupBody{
       .popImg{
@@ -1101,6 +1101,15 @@ footer{
       .footUnit{
         &:nth-of-type(2){
           padding-left: 15px;
+          text-align: right;
+        }
+        &:nth-of-type(4){
+          .dload{
+            text-align: right;
+          }
+          .dloadIcons{
+            float: right;
+          }
         }
       }
     }
