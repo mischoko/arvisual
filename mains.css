@@ -691,23 +691,21 @@ nav ul li a:hover {
           justify-content: center;
 }
 
-.downCont .downContContainer .sales, .downCont .downContContainer .management, .downCont .downContContainer .marketing {
-  -ms-flex-preferred-size: 33.3% !important;
-      flex-basis: 33.3% !important;
+.downCont .downContContainer .sales, .downCont .downContContainer .management, .downCont .downContContainer .marketing, .downCont .downContContainer .miami {
+  -ms-flex-preferred-size: 25% !important;
+      flex-basis: 25% !important;
   text-align: center;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
   color: #787878;
   line-height: 1.6em;
 }
 
-.downCont .downContContainer .sales strong, .downCont .downContContainer .management strong, .downCont .downContContainer .marketing strong {
+.downCont .downContContainer .sales strong, .downCont .downContContainer .management strong, .downCont .downContContainer .marketing strong, .downCont .downContContainer .miami strong {
   color: #393939;
   font-size: 1.2em;
   line-height: 2em;
 }
 
-.downCont .downContContainer .sales .socialMedia, .downCont .downContContainer .management .socialMedia, .downCont .downContContainer .marketing .socialMedia {
+.downCont .downContContainer .sales .socialMedia, .downCont .downContContainer .management .socialMedia, .downCont .downContContainer .marketing .socialMedia, .downCont .downContContainer .miami .socialMedia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,7 +716,7 @@ nav ul li a:hover {
   margin-top: 110px;
 }
 
-.downCont .downContContainer .sales .socialMedia i, .downCont .downContContainer .management .socialMedia i, .downCont .downContContainer .marketing .socialMedia i {
+.downCont .downContContainer .sales .socialMedia i, .downCont .downContContainer .management .socialMedia i, .downCont .downContContainer .marketing .socialMedia i, .downCont .downContContainer .miami .socialMedia i {
   color: #393939;
   font-size: 1.5em;
   margin-right: 30px;
@@ -726,13 +724,18 @@ nav ul li a:hover {
           transition-duration: .2s;
 }
 
-.downCont .downContContainer .sales .socialMedia i:hover, .downCont .downContContainer .management .socialMedia i:hover, .downCont .downContContainer .marketing .socialMedia i:hover {
+.downCont .downContContainer .sales .socialMedia i:hover, .downCont .downContContainer .management .socialMedia i:hover, .downCont .downContContainer .marketing .socialMedia i:hover, .downCont .downContContainer .miami .socialMedia i:hover {
   color: #787878;
   cursor: pointer;
 }
 
 .downCont .downContContainer .management {
   margin-left: 50px;
+  margin-right: 25px;
+}
+
+.downCont .downContContainer .marketing {
+  margin-left: 25px;
   margin-right: 50px;
 }
 
@@ -1024,8 +1027,8 @@ footer .dloadIcons .android:hover {
             flex-direction: column;
   }
   .downCont .downContContainer .sales, .downCont .downContContainer .management, .downCont .downContContainer .marketing {
-    -ms-flex-preferred-size: 33%;
-        flex-basis: 33%;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
   }
   .downCont .downContContainer .sales .socialMedia, .downCont .downContContainer .management .socialMedia, .downCont .downContContainer .marketing .socialMedia {
     display: none;
@@ -1053,6 +1056,31 @@ footer .dloadIcons .android:hover {
   .socialMedia2 i:hover {
     color: #787878;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .downCont .downContContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .downCont .downContContainer .wrapOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .downCont .downContContainer .wrapOne .management, .downCont .downContContainer .wrapOne .marketing {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 

@@ -563,15 +563,14 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    .sales, .management, .marketing{
-      flex-basis: 33.3% !important;
+    .sales, .management, .marketing, .miami{
+      flex-basis: 25% !important;
       text-align: center;
       strong{
         color: $darkGray;
         font-size: 1.2em;
         line-height: 2em;
       }
-      flex-basis: 30%;
       color: $lightGray;
       line-height: 1.6em;
       .socialMedia{
@@ -592,6 +591,10 @@
     }
     .management{
       margin-left: 50px;
+      margin-right: 25px;
+    }
+    .marketing{
+      margin-left: 25px;
       margin-right: 50px;
     }
     .wrapOne{
@@ -846,7 +849,7 @@ footer{
         display: flex;
         flex-direction: column;
         .sales, .management, .marketing{
-          flex-basis: 33%;
+          flex-basis: 25%;
           .socialMedia{
             display: none;
           }
@@ -870,7 +873,23 @@ footer{
     } 
   }
 }
-
+@media screen and (max-width: 750px){
+  .downCont{
+    .downContContainer{
+      flex-direction: row;
+      .wrapOne{
+        flex-direction: column;
+        flex-basis: 100%;
+        align-items: center;
+        text-align: center;
+        .management, .marketing{
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 700px) {
   .aboutUs{
     margin-top: 10px;
