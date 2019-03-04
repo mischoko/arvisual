@@ -74,7 +74,6 @@ if(width > 964){
 }else{
   bug.classList.add('hidden');
 }
-
 //scrolling function
  document.querySelector('.menuContBtn').addEventListener("click", function(event) {
     event.preventDefault();
@@ -199,4 +198,4 @@ var subTotal = widthTotal - widthElement;
 var total = subTotal / 2 - 10;
 var exitbtn = document.getElementById('popupExit');
 exitbtn.style.right = total + "px";
-}
+};

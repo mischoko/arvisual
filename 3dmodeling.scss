@@ -5,7 +5,7 @@ $darkGray: #393939;
 $lightGray: #787878;
 $marginInit: 18%;
 $marginMob: 4%;
-$grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
+$grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
 
 //main image top
 .mainImg{
@@ -98,6 +98,11 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 964px) {
+    .logo{
+        margin-top: 13px !important;
     }
 }
 @media screen and (max-width: 900px) {

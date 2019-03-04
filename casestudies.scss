@@ -4,7 +4,7 @@ $darkGray: #393939;
 $lightGray: #787878;
 $marginInit: 18%;
 $marginMob: 4%;
-$grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
+$grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
 
 .mainImg{
     background: url('imgs/glamm_fire_cs.jpg')no-repeat;
@@ -255,13 +255,13 @@ $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
 @media screen and (max-width: 964px) {
     .logo {
       padding: 0;
-      margin-top: 18px;
+      margin-top: 13px;
       left: 2.5%;;
     }
     .logoFix{
       margin-top: 11px !important;
     }
-    .mainImg, .mainImgVzor{
+    .mainImg, .mainImgVzor, .mainImgWG{
       height: 300px;
       background-position: right;
     }

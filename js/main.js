@@ -238,7 +238,6 @@ if(width > 964){
   };
   contactForm.onsubmit = onSubmit;
 }();
-
 //exit btn position calc
 document.onclick = function(){
 var element = document.getElementsByClassName('popupBody')[0];
@@ -249,3 +248,27 @@ var total = subTotal / 2 - 10;
 var exitbtn = document.getElementById('popupExit');
 exitbtn.style.right = total + "px";
 }
+//fallback onclick scroll for safari browsers
+const contact = document.getElementById('sfCnt');
+
+contact.addEventListener("click", function(){
+  window.scrollTo(0,document.body.scrollHeight);
+});
+//fallback onclick scroll for safari browsers
+const contact = document.getElementById('sfCnt');
+const more = document.getElementById('ctaBtn');
+const anchor = document.getElementById('anchor').offsetTop;
+const total = anchor - 60;
+
+more.addEventListener("click", function() {
+  var i = 10;
+  var int = setInterval(function() {
+    window.scrollTo(total, i);
+    i += 10;
+    if (i >= total) clearInterval(int);
+  }, 5);
+})
+
+contact.addEventListener("click", function(){
+  window.scrollTo(0,document.body.scrollHeight);
+});

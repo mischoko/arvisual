@@ -15,7 +15,7 @@
   $lightGray: #787878;
   $marginInit: 18%;
   $marginMob: 4%;
-  $grad: linear-gradient(+90deg, #ed1a6b, #2d77bd);
+  $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
   
   html body {
     margin: 0;
@@ -28,7 +28,7 @@
     height: 60px;
     position: fixed;
     z-index: 1000;
-    background-color: transparent;
+    background-color: $darkGray;
     transition-duration: .5s;
   }
   .blackNav{
@@ -49,17 +49,14 @@
       }
     }
   }
-  .logoFix{
-    margin-top: 4px !important;
-  }
 
   .logo {
     float: left;
     padding: 8px;
     left: 60px;
-    margin-top: 15px;
     position: fixed;
     transition-duration: .5s;
+    margin-top: 5px;
 
     a {
       color: $darkGray;
@@ -75,7 +72,7 @@
   //menu items
   nav ul {
     float: right;
-    margin-top: 35px;
+    margin-top: 20px;
     transition-duration: .5s;
     position: fixed;
     right: 60px;
@@ -210,6 +207,7 @@
 .contact{
     .containCont{
         margin-top: 50px;
+        margin-bottom: 60px;
         margin-left: $marginInit;
         margin-right: $marginInit;
         .header{
@@ -610,13 +608,13 @@
 footer{
   background: $darkGray;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 50px;
   .footCont{
     display: flex;
     flex-direction: row;
     padding-top: 10px;
     .footUnit{
-      flex-basis: 33.3%;
+      flex-basis: unset;
       padding-right: 4%;
       padding-left: 4%;
       ul{
@@ -637,8 +635,9 @@ footer{
           }
         }
       }
-      &:nth-of-type(4){
-        padding-left: 0;
+      &:nth-of-type(3){
+        position: absolute;
+        right: 0;
       }
     }
     .add{
@@ -721,11 +720,8 @@ footer{
   @media screen and (max-width: 964px) {
     .logo {
       padding: 0;
-      margin-top: 18px;
+      margin-top: 13px;
       left: 2.5%;
-    }
-    .logoFix{
-      margin-top: 11px !important;
     }
     .mainImg{
       height: 300px;
@@ -882,6 +878,7 @@ footer{
   .contact{
     .containCont{
       margin-top: 10px;
+      margin-bottom: 30px;
       .contForm{
         flex-direction: column;
         form{
@@ -900,7 +897,7 @@ footer{
     .footCont{
       flex-wrap: wrap;
       .footUnit{
-        flex-basis: 50%;
+        flex-basis: unset;
         &:nth-of-type(3){
           max-width: unset;
         }
@@ -1002,6 +999,9 @@ footer{
     .footCont{
       .footUnit{
         flex-basis: 50%;
+        &:nth-of-type(3){
+          position: initial;
+        }
       }
     }
   }
