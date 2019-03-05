@@ -3419,6 +3419,10 @@ footer .dloadIcons .android:hover {
   line-height: 1.6em;
 }
 
+.appDesc .descUnit p strong {
+  font-weight: 900;
+}
+
 .highlights {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3429,7 +3433,7 @@ footer .dloadIcons .android:hover {
           flex-direction: row;
   padding-left: 18%;
   padding-right: 18%;
-  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 .highlights .highUnit {
@@ -3457,6 +3461,49 @@ footer .dloadIcons .android:hover {
 }
 
 .highlights .highUnit p {
+  margin-top: 0;
+  color: #787878;
+  line-height: 1.6em;
+}
+
+.highlightsApp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 18%;
+  padding-right: 18%;
+  margin-bottom: 50px;
+}
+
+.highlightsApp .highUnit {
+  -ms-flex-preferred-size: 33.3%;
+      flex-basis: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.highlightsApp .highUnit h1 {
+  color: #393939;
+  font-weight: 900;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.highlightsApp .highUnit h1:first-of-type {
+  color: #2d77bd;
+}
+
+.highlightsApp .highUnit p {
   margin-top: 0;
   color: #787878;
   line-height: 1.6em;
@@ -3515,7 +3562,7 @@ footer .dloadIcons .android:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  .App, .highlights, .appDesc, .ourApp {
+  .App, .highlights, .appDesc, .ourApp, .highlightsApp {
     padding-left: 4%;
     padding-right: 4%;
   }
@@ -3587,6 +3634,13 @@ footer .dloadIcons .android:hover {
   }
   .highlights .highUnit:nth-child(4) {
     margin-top: 15px;
+  }
+  .highlightsApp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
   }
   .appDesc .descUnit h1 {
     font-size: 1.3em !important;

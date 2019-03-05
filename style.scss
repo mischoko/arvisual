@@ -635,8 +635,6 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
     .contAr{
         flex-direction: column;
         height: 720px;
-        .textAr{
-        }
         .imgAr1, .imgAr2, .imgAr3{
             flex-basis: 70%;
             margin-top: 2%;
@@ -647,6 +645,17 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
     }
     .flip{
         margin-top: 2%;
+    }
+    .blogCont{
+        .blogUnit{
+            .bimg1, .bimg3{
+                height: 200px;
+            }
+            h1{
+                font-size: 1.2em !important;
+                line-height: 1.45em;
+            }
+        }
     }
 }
 @media screen and (max-width: 450px) {

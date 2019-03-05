@@ -2026,6 +2026,13 @@ footer .dloadIcons .android:hover {
   .flip {
     margin-top: 2%;
   }
+  .blogCont .blogUnit .bimg1, .blogCont .blogUnit .bimg3 {
+    height: 200px;
+  }
+  .blogCont .blogUnit h1 {
+    font-size: 1.2em !important;
+    line-height: 1.45em;
+  }
 }
 
 @media screen and (max-width: 450px) {
