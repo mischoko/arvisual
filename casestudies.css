@@ -422,6 +422,10 @@ nav ul li a:hover {
   margin-top: 25px;
 }
 
+.requestDemo .contDemo .par br {
+  display: block;
+}
+
 .requestDemo .contDemo wrapper {
   display: block;
   padding-bottom: 40px;
@@ -1130,6 +1134,9 @@ footer .dloadIcons .android:hover {
   }
   footer .footCont .footUnit:nth-of-type(3) .apple, footer .footCont .footUnit:nth-of-type(3) .android {
     float: left;
+  }
+  .requestDemo .contDemo .par br {
+    display: none;
   }
 }
 

@@ -106,6 +106,7 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
         }
     }
 }
+//appcontent
 .contAr{
     display: flex;
     flex-direction: row;
@@ -187,6 +188,38 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
 .howHead{
     margin-top: 50px;
     text-align: center;
+}
+//highlights
+.highlights{
+    display: flex;
+    flex-direction: row;
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    .highUnit{
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        br{
+            display: none;
+        }
+        h1{
+            color: $darkGray;
+            font-weight: 900;
+            margin-bottom: 0px;
+            margin-top: 5px;
+            &:first-of-type{
+                color: #2d77bd;
+            }
+        }
+        p{
+            margin-top: 0;
+            color: $lightGray;
+            line-height: 1.6em;
+        }
+    }
 }
 //process
 .how{
@@ -377,6 +410,75 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
         }
     }
 }
+//testimonials
+.wrapTest{
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    .testUnit{
+        flex-basis: 33.3%;
+        box-shadow: rgba(0, 0, 0, .15) 1px 1px 10px;
+        padding: 10px 20px;
+        border-radius: 2px;
+        .testImg1{
+            background: url('imgs/doris.jpg')no-repeat center;
+            background-size: cover;
+            height: 90px;
+            width: 90px;
+            border-radius: 50px;
+            margin: 0 auto;
+        }
+        .testImg2{
+            background: url('imgs/heat.jpg')no-repeat center;
+            background-size: cover;
+            height: 90px;
+            width: 90px;
+            border-radius: 50px;
+            margin: 0 auto;
+        }
+        .testImg3{
+            background: url('imgs/klybeck.jpg')no-repeat center;
+            background-size: cover;
+            height: 90px;
+            width: 90px;
+            border-radius: 50px;
+            margin: 0 auto;
+        }
+        .testImg4{
+            background: url('imgs/greenmood.jpg')no-repeat center;
+            background-size: cover;
+            height: 90px;
+            width: 90px;
+            border-radius: 50px;
+            margin: 0 auto;
+        }
+        &:nth-of-type(2){
+            margin-left: 50px;
+            margin-right: 25px;
+        }
+        &:nth-of-type(3){
+            margin-left: 25px;
+            margin-right: 50px;
+        }
+        i{
+            display: block;
+            color: $lightGray;
+            margin-top: 5px;
+            font-size: .9em;
+            line-height: 1.6em;
+        }
+        p{
+            color: $darkGray;
+            margin-top: 10px;
+            font-weight: bold;
+            span{
+                color: #2d77bd;
+            }
+        }
+    }
+}
 
 /////////////////////////////MEDIAQUERIES///////////////////////////////////
 /////////////////////////////MEDIAQUERIES///////////////////////////////////
@@ -385,6 +487,32 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
     .wrapVid{
         #tagline{
             top: 320px;
+        }
+    }
+    .wrapTest{
+        justify-content: center;
+        flex-wrap: wrap;
+        .testUnit{
+            flex-basis: 50%;
+            max-width: 45%;
+            &:nth-of-type(1){
+                margin-left: 0;
+                margin-right: 25px;
+            }
+            &:nth-of-type(2){
+                margin-right: 25px;
+                margin-left: 0;
+            }
+            &:nth-of-type(3){
+                margin-left: 0;
+                margin-right: 25px;
+                margin-top: 20px;
+            }
+            &:nth-of-type(4){
+                margin-top: 20px;
+                margin-right: 25px;
+                margin-left: 0;
+            }
         }
     }
 }
@@ -401,9 +529,12 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
     }
 }
 @media screen and (max-width: 1200px) {
-    .contAr{
+    .contAr, .highlights{
         padding-left: $marginMob;
         padding-right: $marginMob;
+    }
+    .highlights{
+        margin-top: 0;
     }
     .how{
         padding-left: $marginMob;
@@ -419,6 +550,10 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
                 }
             }
         }
+    }
+    .wrapTest{
+        padding-left: $marginMob;
+        padding-right: $marginMob;
     }
 }
 @media screen and (max-width: 1000px) {
@@ -584,6 +719,23 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
             margin: 0 auto;
         }
     }
+    .highlights{
+        flex-wrap: wrap;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        .highUnit{
+            br{
+                display: block;
+            }
+            flex-basis: 50%;
+            &:nth-child(3){
+                margin-top: 15px;
+            }
+            &:nth-child(4){
+                margin-top: 15px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 600px) {
     .contAr{
@@ -622,6 +774,15 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
                     }
                 }
             }
+        }
+    }
+    .wrapTest{
+        .testUnit{
+            flex-basis: 100%;
+            max-width: unset;
+            margin-top: 20px;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
         }
     }
 }

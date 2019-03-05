@@ -351,6 +351,9 @@
       line-height: 1.6em;
       margin-bottom: 35px;
       margin-top: 25px;
+      br{
+        display: block;
+      }
     }
     wrapper{
       display: block;
@@ -932,6 +935,15 @@ footer{
           .apple, .android{
             float: left;
           }
+        }
+      }
+    }
+  }
+  .requestDemo{
+    .contDemo{
+      .par{
+        br{
+          display: none;
         }
       }
     }
