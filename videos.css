@@ -739,6 +739,10 @@ nav ul li a:hover {
   margin-right: 50px;
 }
 
+.downCont .downContContainer .miami, .downCont .downContContainer .sales {
+  min-width: 130px;
+}
+
 .downCont .downContContainer .wrapOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2012,6 +2016,10 @@ nav ul li a:hover {
   margin-right: 50px;
 }
 
+.downCont .downContContainer .miami, .downCont .downContContainer .sales {
+  min-width: 130px;
+}
+
 .downCont .downContContainer .wrapOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2836,8 +2844,8 @@ footer .dloadIcons .android:hover {
 .how .processFlex .processUnit .under1 {
   background: url("imgs/user.svg") no-repeat center;
   background-size: cover;
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
   margin: 0 auto;
   margin-top: 30px;
 }

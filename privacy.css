@@ -739,6 +739,10 @@ nav ul li a:hover {
   margin-right: 50px;
 }
 
+.downCont .downContContainer .miami, .downCont .downContContainer .sales {
+  min-width: 130px;
+}
+
 .downCont .downContContainer .wrapOne {
   display: -webkit-box;
   display: -ms-flexbox;

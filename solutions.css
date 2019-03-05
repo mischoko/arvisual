@@ -739,6 +739,10 @@ nav ul li a:hover {
   margin-right: 50px;
 }
 
+.downCont .downContContainer .miami, .downCont .downContContainer .sales {
+  min-width: 130px;
+}
+
 .downCont .downContContainer .wrapOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2012,6 +2016,10 @@ nav ul li a:hover {
   margin-right: 50px;
 }
 
+.downCont .downContContainer .miami, .downCont .downContContainer .sales {
+  min-width: 130px;
+}
+
 .downCont .downContContainer .wrapOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2836,8 +2844,8 @@ footer .dloadIcons .android:hover {
 .how .processFlex .processUnit .under1 {
   background: url("imgs/user.svg") no-repeat center;
   background-size: cover;
-  width: 75px;
-  height: 75px;
+  width: 80px;
+  height: 80px;
   margin: 0 auto;
   margin-top: 30px;
 }
@@ -3319,7 +3327,287 @@ footer .dloadIcons .android:hover {
   height: 400px;
 }
 
-.contAr {
-  margin-top: 50px;
+.ourApp {
+  padding-left: 18%;
+  padding-right: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.ourApp .appWrap {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  height: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ourApp .appWrap h1 {
+  color: #393939;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.ourApp .appWrap p {
+  margin-top: 0;
+  color: #787878;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 1.6em;
+  margin-bottom: 15px;
+}
+
+.ourApp .ourImg {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background: url("imgs/our.jpg") no-repeat center;
+  background-size: contain;
+}
+
+.appDesc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 18%;
+  padding-right: 18%;
+  margin-top: 20px;
+}
+
+.appDesc .descUnit {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.appDesc .descUnit:nth-child(1) {
+  margin-right: 25px;
+}
+
+.appDesc .descUnit:nth-child(2) {
+  margin-left: 25px;
+}
+
+.appDesc .descUnit h1 {
+  color: #393939;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.appDesc .descUnit p {
+  margin-top: 10px;
+  color: #787878;
+  line-height: 1.6em;
+}
+
+.highlights {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 18%;
+  padding-right: 18%;
+  margin-top: 40px;
+}
+
+.highlights .highUnit {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.highlights .highUnit h1 {
+  color: #393939;
+  font-weight: 900;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.highlights .highUnit h1:first-of-type {
+  color: #2d77bd;
+}
+
+.highlights .highUnit p {
+  margin-top: 0;
+  color: #787878;
+  line-height: 1.6em;
+}
+
+.App {
+  padding-left: 18%;
+  padding-right: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.App .appWrap {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  height: 500px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.App .appWrap h1 {
+  color: #393939;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.App .appWrap p {
+  margin-top: 0;
+  color: #787878;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  line-height: 1.6em;
+  margin-bottom: 15px;
+}
+
+.App .ourImg {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background: url("imgs/heymat.jpg") no-repeat center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 1200px) {
+  .App, .highlights, .appDesc, .ourApp {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .ourApp {
+    margin-top: 0;
+  }
+  .ourApp .appWrap {
+    height: 400px;
+  }
+  .App .appWrap {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .imgUp {
+    height: 300px;
+  }
+  .ourApp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ourApp .appWrap {
+    height: unset;
+  }
+  .ourApp .ourImg {
+    height: 500px;
+  }
+  .appDesc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .appDesc .descUnit {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .App {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .appWrap {
+    height: unset;
+  }
+  .App .ourImg {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .imgUp {
+    height: 250px;
+  }
+  .highlights {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .highlights .highUnit {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .highlights .highUnit:nth-child(3) {
+    margin-top: 15px;
+  }
+  .highlights .highUnit:nth-child(4) {
+    margin-top: 15px;
+  }
+  .appDesc .descUnit h1 {
+    font-size: 1.3em !important;
+  }
+  .ourApp .appWrap {
+    margin-top: 10px;
+  }
+  .ourApp .appWrap h1 {
+    font-size: 1.3em !important;
+  }
+  .ourApp .ourImg {
+    height: 340px;
+  }
+  .App .appWrap {
+    margin-top: 10px;
+  }
+  .App .appWrap h1 {
+    font-size: 1.3em !important;
+  }
+  .App .ourImg {
+    height: 340px;
+  }
 }
 /*# sourceMappingURL=solutions.css.map */

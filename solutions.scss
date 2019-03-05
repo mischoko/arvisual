@@ -13,6 +13,218 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
     width: 100%;
     height: 400px;
 }
-.contAr{
-    margin-top: 50px;
+.ourApp{
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    display: flex;
+    flex-direction: row;
+    .appWrap{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        height: 500px;
+        justify-content: center;
+        h1{
+            color: $darkGray;
+            font-size: 1.5em;
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0;
+            color: $lightGray;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            line-height: 1.6em;
+            margin-bottom: 15px;
+        }
+    }
+    .ourImg{
+        flex-basis: 50%;
+        background: url('imgs/our.jpg')no-repeat center;
+        background-size: contain;
+    }
+}
+.appDesc{
+    display: flex;
+    flex-direction: row;
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    margin-top: 20px;
+    .descUnit{
+        flex-basis: 50%;
+        &:nth-child(1){
+            margin-right: 25px;
+        }
+        &:nth-child(2){
+            margin-left: 25px;
+        }
+        h1{
+            color: $darkGray;
+            font-size: 1.5em;
+            font-weight: 900;
+            margin-bottom: 0px;
+            margin-top: 5px;
+        }
+        p{
+            margin-top: 10px;
+            color: $lightGray;
+            line-height: 1.6em;
+        }
+    }
+}
+.highlights{
+    display: flex;
+    flex-direction: row;
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    margin-top: 40px;
+    .highUnit{
+        flex-basis: 25%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            color: $darkGray;
+            font-weight: 900;
+            margin-bottom: 0px;
+            margin-top: 5px;
+            &:first-of-type{
+                color: #2d77bd;
+            }
+        }
+        p{
+            margin-top: 0;
+            color: $lightGray;
+            line-height: 1.6em;
+        }
+    }
+}
+.App{
+    padding-left: $marginInit;
+    padding-right: $marginInit;
+    display: flex;
+    flex-direction: row-reverse;
+    .appWrap{
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        height: 500px;
+        justify-content: center;
+        h1{
+            color: #393939;
+            font-size: 1.5em;
+            font-weight: 900;
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0;
+            color: #787878;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            line-height: 1.6em;
+            margin-bottom: 15px;
+        }
+    }
+    .ourImg{
+        flex-basis: 50%;
+        background: url('imgs/heymat.jpg')no-repeat center;
+        background-size: contain;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .App, .highlights, .appDesc, .ourApp{
+        padding-left: $marginMob;
+        padding-right: $marginMob;
+    }
+    .ourApp{
+        margin-top: 0;
+        .appWrap{
+            height: 400px;
+        }
+    }
+    .App{
+        .appWrap{
+            height: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .imgUp{
+        height: 300px;
+    }
+    .ourApp{
+        flex-direction: column;
+        .appWrap{
+            height: unset;
+        }
+        .ourImg{
+            height: 500px;
+        }
+    }
+    .appDesc{
+        flex-direction: column;
+        .descUnit{
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+    }
+    .App{
+        flex-direction: column;
+        .appWrap{
+            height: unset;
+        }
+        .ourImg{
+            height: 500px;
+        }
+    }
+}
+@media screen and (max-width: 550px) {
+    .imgUp{
+        height: 250px;
+    }
+    .highlights{
+        flex-wrap: wrap;
+        .highUnit{
+            flex-basis: 50%;
+            &:nth-child(3){
+                margin-top: 15px;
+            }
+            &:nth-child(4){
+                margin-top: 15px;
+            }
+        }
+    }
+    .appDesc{
+        .descUnit{
+            h1{
+                font-size: 1.3em !important;
+            }
+        }
+    }
+    .ourApp{
+        .appWrap{
+            margin-top: 10px;
+            h1{
+                font-size: 1.3em !important;
+            }
+        }
+        .ourImg{
+            height: 340px;
+        }
+    }
+    .App{
+        .appWrap{
+            margin-top: 10px;
+            h1{
+                font-size: 1.3em !important;
+            }
+        }
+        .ourImg{
+            height: 340px;
+        }
+    }
 }

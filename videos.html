@@ -176,6 +176,38 @@
                         </div>
                   </div>
             </div>
+            <div id="popupMain">
+                  <div id="popupExit"><p class="exitBtn">+</p></div>
+                  <div class="popupBody">
+                        <div class="popImg"></div>
+                        <form class="contact_form calendar" action="mailer.php" method="POST" autocomplete="off">
+                              <h1 class="header">Would you like a demo?</h1>
+                              <p class="hook">Free demonstration of your products in Augmented Reality? No problem
+                                          just send us all the info, we will hook you up.
+                                    </p>
+                              <input class="input-subject" id="subject" type="text" name="subj" required placeholder="Subject">
+                              <input class="input-email" id="userEmail" type="email" name="email" required placeholder="@">
+                              <textarea class="input-message" id="message" type="text" name="message" rows="10" cols="30" required placeholder="Message"></textarea>
+                              <div>
+                                    <input type="checkbox" id="gdpr" name="gdpr" style="margin-top:18px;" required>
+                                    <label for="gdpr" class="gdpr">I agree with <a style="color: inherit;text-decoration: underline;" href="privacy">the policy</a> of AR Visual</label>
+                              </div>
+                              <input id="submit" type="submit" name="submit" value="Submit">
+                        </form>
+                        <div class="successAlert">
+                              <h1>Thank you for reaching out</h1>
+                              <p>Your message has been sent successfuly, we will contact you as soon as possible.</p>
+                              <p>Meanwhile, why don't you go ahead and see what's new?</p>
+                              <div class="socialMediaPopup">
+                                    <a href="https://www.facebook.com/arvisualofficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/company/arvisual/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCKDOdMfVe6p29hEckLiSYKg" target="_blank"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/arvisualofficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+                              </div>
+                              <wrapper><button id="okBtn" class="allright">Allright</button></wrapper>
+                        </div>
+                  </div>
+            </div>
              <div class="downCont section" id="scrollContact">
                   <h1 class="header">Contact us</h1>
                   <div class="downContContainer">
@@ -241,7 +273,7 @@
             </div>
             <p>&copy; 2019 AR Visual</p>
       </footer>
-      <script src="js/index.js"></script>
+      <script src="js/case.js"></script>
       <script>
       var bbn = document.getElementById('sfCnt');
       var menu = document.getElementById('mobileMenu');

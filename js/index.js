@@ -120,7 +120,7 @@ if (whitebar.classList.contains('blackNav')){
         i1.style.background = "black";
         i2.style.background = "black";
     }
-}
+};
 //popup request demo
 document.querySelector('#btnDemoPop').addEventListener("click", function(){
   var popup = document.getElementById('popupMain');

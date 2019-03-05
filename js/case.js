@@ -64,8 +64,7 @@ window.onscroll = function() {
             logoColor6.style.fill = "white";
             logoColor7.style.fill = "white";
     }
-}
-
+};
 //fix on normal menu visibility
 var width = window.innerWidth;
 var bug = document.getElementById('mobileMenu');
@@ -73,7 +72,7 @@ if(width > 964){
     bug.classList.remove('hidden');
 }else{
   bug.classList.add('hidden');
-}
+};
 //scrolling function
  document.querySelector('.menuContBtn').addEventListener("click", function(event) {
     event.preventDefault();
@@ -118,31 +117,8 @@ if (whitebar.classList.contains('blackNav')){
         i1.style.background = "black";
         i2.style.background = "black";
     }
-}
-//popup request demo
-document.querySelector('#btnDemoPop').addEventListener("click", function(){
-  var popup = document.getElementById('popupMain');
-  var exit = document.getElementById('popupExit');
-  popup.style.display = "block";
-    
-  exit.addEventListener("click", function(){
-    popup.style.display = "none";
-    })
-});
-//popup request from footer anchor
-document.getElementById('footDemo').addEventListener("click", function(){
-  var popup = document.getElementById('popupMain');
-  var exit = document.getElementById('popupExit');
-  popup.style.display = "block";
-  exit.addEventListener("click", function(){
-    popup.style.display = "none";
-    })
-});
-//close popup by allright btn after success msg
-document.getElementById('okBtn').addEventListener("click", function(){
-  var popup = document.getElementById('popupMain');
-      popup.style.display = "none";
-});
+};
+
 //mailer script
 !function(){
     var contactForm = document.querySelector('.contact_form');
@@ -188,14 +164,37 @@ document.getElementById('okBtn').addEventListener("click", function(){
     };
     contactForm.onsubmit = onSubmit;
 }();
-
 //exit btn position calc
 document.onclick = function(){
-var element = document.getElementsByClassName('popupBody')[0];
-var widthElement = element.offsetWidth;
-var widthTotal = window.innerWidth;
-var subTotal = widthTotal - widthElement;
-var total = subTotal / 2 - 10;
-var exitbtn = document.getElementById('popupExit');
-exitbtn.style.right = total + "px";
-};
+  var element = document.getElementsByClassName('popupBody')[0];
+  var widthElement = element.offsetWidth;
+  var widthTotal = window.innerWidth;
+  var subTotal = widthTotal - widthElement;
+  var total = subTotal / 2 - 10;
+  var exitbtn = document.getElementById('popupExit');
+  exitbtn.style.right = total + "px";
+  };
+//popup request from footer anchor
+document.getElementById('footDemo').addEventListener("click", function(){
+  var popup = document.getElementById('popupMain');
+  var exit = document.getElementById('popupExit');
+  popup.style.display = "block";
+  exit.addEventListener("click", function(){
+    popup.style.display = "none";
+    })
+});
+//popup request demo
+document.querySelector('#btnDemoPop').addEventListener("click", function(){
+  var popup = document.getElementById('popupMain');
+  var exit = document.getElementById('popupExit');
+  popup.style.display = "block";
+    
+  exit.addEventListener("click", function(){
+    popup.style.display = "none";
+    })
+});
+//close popup by allright btn after success msg
+document.getElementById('okBtn').addEventListener("click", function(){
+  var popup = document.getElementById('popupMain');
+      popup.style.display = "none";
+});
