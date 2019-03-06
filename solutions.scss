@@ -218,6 +218,8 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
     }
     .highlights{
         flex-wrap: wrap;
+        margin-bottom: 0;
+        margin-top: 20px;
         .highUnit{
             flex-basis: 50%;
             &:nth-child(3){

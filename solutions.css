@@ -3843,6 +3843,8 @@ footer .dloadIcons .android:hover {
   .highlights {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-top: 20px;
   }
   .highlights .highUnit {
     -ms-flex-preferred-size: 50%;
