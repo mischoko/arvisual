@@ -2819,8 +2819,8 @@ footer .dloadIcons .android:hover {
 }
 
 .highlights .highUnit {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2891,8 +2891,8 @@ footer .dloadIcons .android:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2900,6 +2900,11 @@ footer .dloadIcons .android:hover {
 
 .how .processFlex .processUnit:nth-of-type(2) {
   margin-left: 40px;
+  margin-right: 20px;
+}
+
+.how .processFlex .processUnit:nth-of-type(3) {
+  margin-left: 20px;
   margin-right: 40px;
 }
 
@@ -2923,6 +2928,15 @@ footer .dloadIcons .android:hover {
 
 .how .processFlex .processUnit .under3 {
   background: url("imgs/retail.svg") no-repeat center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.how .processFlex .processUnit .under4 {
+  background: url("imgs/exhibition.svg") no-repeat center;
   background-size: cover;
   width: 80px;
   height: 80px;
@@ -3246,10 +3260,6 @@ footer .dloadIcons .android:hover {
     padding-left: 4%;
     padding-right: 4%;
   }
-  .how .processFlex .processUnit:nth-of-type(2) {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
   .how .processFlex .processUnit .under {
     margin-left: -40px;
   }
@@ -3281,6 +3291,17 @@ footer .dloadIcons .android:hover {
   }
   .howHead {
     margin-top: 40px;
+  }
+  .how .processFlex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .how .processFlex .processUnit {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
   }
 }
 
@@ -3324,7 +3345,7 @@ footer .dloadIcons .android:hover {
     margin-left: 0;
     margin-right: 0;
   }
-  .how .processFlex .processUnit:nth-of-type(3) {
+  .how .processFlex .processUnit:nth-of-type(4) {
     padding-bottom: 15px;
   }
   .how .processFlex .processUnit .under1 {
@@ -3439,6 +3460,14 @@ footer .dloadIcons .android:hover {
   }
   .highlights .highUnit:nth-child(4) {
     margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .how .processFlex .processUnit {
+    max-width: 320px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }
 

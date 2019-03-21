@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
-$to       = 'info@arvisual.eu';
+$to = 'info@arvisual.eu';
 $subj     = "New custom app inquiry";
 $email    = !empty($_POST['email']) ? htmlentities($_POST['email']) : "";
 $message  = !empty($_POST['message']) ? htmlentities($_POST['message']) : "";
@@ -15,7 +15,7 @@ $headers = "From: case@arvisual.eu" . "\r\n" .
            'Content-Type: text/html; charset=utf-8' . "\r\n";
 $txt = "<html>
         <body>
-            <p>From: " . $message . " <br>
+            <p>Od: " . $message . " <br>
             " . $email . "</p>
         </body>
             </html>";

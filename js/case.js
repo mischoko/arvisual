@@ -143,7 +143,7 @@ if (whitebar.classList.contains('blackNav')){
         if (email && message) {
 
             var request = new XMLHttpRequest();
-            var url = "https://www.arvisual.eu/neue/mailer.php"
+            var url = "https://www.arvisual.eu/mailer.php"
 
             request.open('POST', url);
 
@@ -164,6 +164,61 @@ if (whitebar.classList.contains('blackNav')){
     };
     contactForm.onsubmit = onSubmit;
 }();
+
+//mailer script yer own solution
+!function(){
+  var contactForm = document.querySelector('.contact_form2');
+  //var subjectElement = document.querySelector('.input-subject');
+  var emailElement = document.querySelector('.input-email2');
+  var messageElement = document.querySelector('.input-message2');
+  var calendarElement = document.querySelector('.calendar2');
+  var successAlertElement = document.querySelector('.successAlert2');
+  var contactFormElement = document.querySelector('.contact_form2');
+
+  function onComplete () {
+      calendarElement.style.display = 'none';
+      successAlertElement.style.display = 'block';
+      contactFormElement.reset();
+  }
+
+  function onSubmit(event) {
+      event.preventDefault();
+      var email = messageElement.value;
+      var message = emailElement.value;
+
+      if (email && message) {
+
+          var request = new XMLHttpRequest();
+          var url = "https://www.arvisual.eu/mailer2.php"
+
+          request.open('POST', url);
+
+          //var subject = subjectElement.value;
+          var data = new FormData();
+          //data.append("subj", subject);
+          data.append("message", message); 
+          data.append("email", email);
+          request.send(data);
+
+          request.onreadystatechange = function () {
+              if(request.readyState === 4) {
+                  onComplete();
+              }
+          };
+      }
+      return false;
+  };
+  contactForm.onsubmit = onSubmit;
+}();
+
+//okBtn2 / first mail form closer
+document.getElementById('okBtn2').addEventListener("click", function(){
+  var message = document.getElementsByClassName('successAlert2')[0];
+  var form = document.getElementsByClassName('contact_form2')[0];
+    message.style.display = "none";
+    form.style.display = "flex";
+});
+
 //exit btn position calc
 document.onclick = function(){
   var element = document.getElementsByClassName('popupBody')[0];

@@ -171,7 +171,7 @@ if(width > 964){
         if (email && message) {
 
             var request = new XMLHttpRequest();
-            var url = "https://www.arvisual.eu/neue/mailer.php"
+            var url = "https://www.arvisual.eu/mailer.php"
 
             request.open('POST', url);
 
@@ -217,7 +217,7 @@ if(width > 964){
       if (email && message) {
 
           var request = new XMLHttpRequest();
-          var url = "https://www.arvisual.eu/neue/mailer2.php"
+          var url = "https://www.arvisual.eu/mailer2.php"
 
           request.open('POST', url);
 
