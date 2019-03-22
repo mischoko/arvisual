@@ -1285,51 +1285,144 @@ footer .dloadIcons .android:hover {
 .privImg {
   background: url("imgs/press.jpg") no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: right;
   height: 500px;
   width: 100%;
 }
 
-.containGdpr {
+.topHead {
+  color: #393939;
+  font-size: 2em;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.wrapAll {
+  width: 100%;
   padding-left: 18%;
   padding-right: 18%;
-  width: 100%;
-  margin-top: 30px;
 }
 
-.containGdpr h1 {
+.wrapAll .unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.wrapAll .unit .unitImg1 {
+  background: url("imgs/press01.jpg") no-repeat center;
+  background-size: cover;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-height: 230px;
+  min-width: 320px;
+}
+
+.wrapAll .unit .unitImg2 {
+  background: url("imgs/press02.jpg") no-repeat center;
+  background-size: cover;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-height: 230px;
+  min-width: 320px;
+}
+
+.wrapAll .unit .unitTxt {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 50px;
+}
+
+.wrapAll .unit .unitTxt .head {
   color: #393939;
+  font-size: 1.4em;
   font-weight: 900;
-  margin-bottom: 0px;
-  margin-top: 40px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.containGdpr p {
+.wrapAll .unit .unitTxt .pFirst {
   color: #787878;
-  line-height: 1.6em;
   margin-top: 10px;
-}
-
-.containGdpr .pFirst {
-  margin-top: 8px;
-}
-
-.containGdpr ul {
-  list-style-type: square;
-  color: #787878;
   line-height: 1.6em;
+  margin-bottom: 15px;
+  max-width: 600px;
 }
 
-@media screen and (max-width: 964px) {
-  .containGdpr {
+.wrapAll .unit .unitTxt a {
+  color: #2d77bd;
+}
+
+.wrapAll .kit {
+  color: #393939;
+  font-size: 1.4em;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.wrapAll ul {
+  padding: 0;
+}
+
+.wrapAll ul li {
+  line-height: 1.6em;
+  list-style: none;
+}
+
+.wrapAll ul li a {
+  color: #2d77bd;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapAll {
     padding-left: 4%;
     padding-right: 4%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .containGdpr h1 {
-    font-size: 1.2em !important;
+@media screen and (max-width: 760px) {
+  .privImg {
+    height: 60px;
+  }
+  .topHead {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .wrapAll .unit {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapAll .unit .unitImg1, .wrapAll .unit .unitImg2 {
+    min-height: 340px;
+    min-width: unset;
+  }
+  .wrapAll .unit .unitTxt {
+    margin-left: 0;
+    margin-top: 30px;
+    -ms-flex-item-align: initial;
+        -ms-grid-row-align: initial;
+        align-self: initial;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .wrapAll .unit .unitImg1, .wrapAll .unit .unitImg2 {
+    min-height: 200px;
+  }
+  .wrapAll .unit .unitTxt {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=press.css.map */
