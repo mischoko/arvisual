@@ -65,6 +65,17 @@ window.onscroll = function() {
             logoColor7.style.fill = "white";
     }
 };
+
+//popup request from footer anchor
+document.getElementById('footDemo').addEventListener("click", function(){
+  var popup = document.getElementById('popupMain');
+  var exit = document.getElementById('popupExit');
+  popup.style.display = "block";
+  exit.addEventListener("click", function(){
+    popup.style.display = "none";
+    })
+});
+
 //fix on normal menu visibility
 var width = window.innerWidth;
 var bug = document.getElementById('mobileMenu');
@@ -84,7 +95,7 @@ if(width > 964){
     offset = document.getElementById(event.srcElement.dataset.scroll).offsetTop;
 		y = document.documentElement.scrollTop;
 });
-//onclick function for hamburge menu
+//onclick function for hamburger menu
 function fun() {
   var i0 = document.getElementsByClassName('ipart')[0];
   var i1 = document.getElementsByClassName('ipart')[1];
@@ -218,26 +229,6 @@ document.getElementById('okBtn2').addEventListener("click", function(){
     message.style.display = "none";
     form.style.display = "flex";
 });
-
-//exit btn position calc
-document.onclick = function(){
-  var element = document.getElementsByClassName('popupBody')[0];
-  var widthElement = element.offsetWidth;
-  var widthTotal = window.innerWidth;
-  var subTotal = widthTotal - widthElement;
-  var total = subTotal / 2 - 10;
-  var exitbtn = document.getElementById('popupExit');
-  exitbtn.style.right = total + "px";
-  };
-//popup request from footer anchor
-document.getElementById('footDemo').addEventListener("click", function(){
-  var popup = document.getElementById('popupMain');
-  var exit = document.getElementById('popupExit');
-  popup.style.display = "block";
-  exit.addEventListener("click", function(){
-    popup.style.display = "none";
-    })
-});
 //popup request demo
 document.querySelector('#btnDemoPop').addEventListener("click", function(){
   var popup = document.getElementById('popupMain');
@@ -247,9 +238,4 @@ document.querySelector('#btnDemoPop').addEventListener("click", function(){
   exit.addEventListener("click", function(){
     popup.style.display = "none";
     })
-});
-//close popup by allright btn after success msg
-document.getElementById('okBtn').addEventListener("click", function(){
-  var popup = document.getElementById('popupMain');
-      popup.style.display = "none";
 });

@@ -4,7 +4,7 @@ $darkGray: #393939;
 $lightGray: #787878;
 $marginInit: 18%;
 $marginMob: 4%;
-$grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
+$grad: linear-gradient(+45deg, #2E1954, #EC1C6C);
 
 //video animation settings
 .wrapVid{
@@ -414,8 +414,8 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
             height: 260px;
         }
         .bimg3{
-            background: url('https://cdn-images-1.medium.com/max/800/1*uoP2rUwi7u40qgQ-Lci-Ig.png')no-repeat;
-            background-position: left;
+            background: url('https://cdn-images-1.medium.com/max/800/1*COXRwvIMTZ2dzt3q5MmnQg.jpeg')no-repeat;
+            background-position: bottom;
             background-size: cover;
             width: 100%;
             height: 260px;
@@ -567,12 +567,12 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
 }
 @media screen and (max-width: 1000px) {
     .wrapVid{
-        max-height: 320px;
+        max-height: 500px;
         #vidOn{
-            margin-top: -35px;
+            margin-top: 50px;
         }
         #tagline{
-            top: 120px;
+            top: 200px;
             h1{
                 font-size: 2.2em;
             }
@@ -716,12 +716,10 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
         }
     }
     .wrapVid{
-        #vidOn{
-            margin-top: 0px;
-        }
         #tagline{
             width: 100%;
             max-width: 400px;
+            top: 150px;
         }
     }
     .contAr{
@@ -757,6 +755,9 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
     }
 }
 @media screen and (max-width: 630px) {
+    .wrapVid > #vidOn{
+        margin-top: 60px;
+    }
     .how{
         .processFlex{
             .processUnit{
@@ -852,13 +853,5 @@ $grad: linear-gradient(+45deg, #ed1a6b, #2d77bd);
 @media screen and (max-width: 450px) {
     .contAr{
         height: 640px;
-    }
-}
-@media screen and (max-width: 400px) {
-    .wrapVid{
-        max-height: 180px;
-        #vidOn{
-            width: 380px;
-        }
     }
 }

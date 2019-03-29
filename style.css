@@ -393,7 +393,7 @@ nav ul li a:hover {
 
 .requestDemo {
   width: 100%;
-  background-image: linear-gradient(45deg, #ed1a6b, #2d77bd);
+  background-image: linear-gradient(45deg, #2E1954, #EC1C6C);
   text-align: center;
   margin-top: 70px;
 }
@@ -1572,7 +1572,7 @@ footer .dloadIcons .android:hover {
   width: 100%;
   padding-left: 18%;
   padding-right: 18%;
-  background: linear-gradient(45deg, #ed1a6b, #2d77bd);
+  background: linear-gradient(45deg, #2E1954, #EC1C6C);
 }
 
 .how .howHead {
@@ -1822,8 +1822,8 @@ footer .dloadIcons .android:hover {
 }
 
 .blogCont .blogUnit .bimg3 {
-  background: url("https://cdn-images-1.medium.com/max/800/1*uoP2rUwi7u40qgQ-Lci-Ig.png") no-repeat;
-  background-position: left;
+  background: url("https://cdn-images-1.medium.com/max/800/1*COXRwvIMTZ2dzt3q5MmnQg.jpeg") no-repeat;
+  background-position: bottom;
   background-size: cover;
   width: 100%;
   height: 260px;
@@ -1987,13 +1987,13 @@ footer .dloadIcons .android:hover {
 
 @media screen and (max-width: 1000px) {
   .wrapVid {
-    max-height: 320px;
+    max-height: 500px;
   }
   .wrapVid #vidOn {
-    margin-top: -35px;
+    margin-top: 50px;
   }
   .wrapVid #tagline {
-    top: 120px;
+    top: 200px;
   }
   .wrapVid #tagline h1 {
     font-size: 2.2em;
@@ -2131,12 +2131,10 @@ footer .dloadIcons .android:hover {
   .aboutUs .moreClients {
     margin-top: 10px;
   }
-  .wrapVid #vidOn {
-    margin-top: 0px;
-  }
   .wrapVid #tagline {
     width: 100%;
     max-width: 400px;
+    top: 150px;
   }
   .contAr {
     -webkit-box-orient: vertical;
@@ -2180,6 +2178,9 @@ footer .dloadIcons .android:hover {
 }
 
 @media screen and (max-width: 630px) {
+  .wrapVid > #vidOn {
+    margin-top: 60px;
+  }
   .how .processFlex .processUnit {
     max-width: 320px;
     margin-left: 0 !important;
@@ -2272,15 +2273,6 @@ footer .dloadIcons .android:hover {
 @media screen and (max-width: 450px) {
   .contAr {
     height: 640px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .wrapVid {
-    max-height: 180px;
-  }
-  .wrapVid #vidOn {
-    width: 380px;
   }
 }
 /*# sourceMappingURL=style.css.map */
